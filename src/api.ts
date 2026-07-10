@@ -7,7 +7,8 @@ query ($name: String, $page: Int) {
       hasNextPage
       currentPage
     }
-    mediaList(userName: $name, type: ANIME, status: COMPLETED) {
+    mediaList(userName: $name, type: ANIME, status_in: [COMPLETED, CURRENT]) {
+      status
       score
       completedAt { year month day }
       media {
@@ -50,6 +51,7 @@ export interface AnimeEntry {
   score: number;
   season: string;
   year: number;
+  listStatus: string;
 }
 
 export interface SeasonGroup {
@@ -66,6 +68,7 @@ export interface YearGroup {
 }
 
 export interface ProcessedData {
+  watching: AnimeEntry[];
   timeline: YearGroup[];
   latestColor: string | null;
 }
@@ -112,45 +115,53 @@ export async function fetchUserAnime(username: string): Promise<ProcessedData> {
 
 function processEntries(entries: any[]): ProcessedData {
   const grouped: Record<number, SeasonGroup> = {};
+  const watching: AnimeEntry[] = [];
   
   let latestDateValue = 0;
   let latestColor: string | null = null;
 
   for (const entry of entries) {
     const media = entry.media;
+    const listStatus = entry.status;
     let season = media.season;
     let year = media.seasonYear;
-    
-    // Find latest color
-    if (entry.completedAt && entry.completedAt.year) {
-      const { year, month, day } = entry.completedAt;
-      const m = month || 1;
-      const d = day || 1;
-      const dateVal = (year * 10000) + (m * 100) + d;
-      if (dateVal > latestDateValue) {
-        latestDateValue = dateVal;
-        latestColor = media.coverImage.color;
-      }
-    }
 
     if (!season || !year) {
       year = media.startDate.year || 1970;
       season = media.startDate.month ? getSeasonFromMonth(media.startDate.month) : 'UNKNOWN';
     }
 
-    if (!grouped[year]) {
-      grouped[year] = { WINTER: [], SPRING: [], SUMMER: [], FALL: [], UNKNOWN: [] };
-    }
-
-    grouped[year][season as keyof SeasonGroup].push({
+    const animeEntry: AnimeEntry = {
       id: media.id,
       title: media.title.userPreferred || media.title.english || media.title.romaji,
       cover: media.coverImage.extraLarge || media.coverImage.large,
       color: media.coverImage.color || '#333333',
       score: entry.score,
       season: season,
-      year: year
-    });
+      year: year,
+      listStatus: listStatus
+    };
+
+    if (listStatus === 'CURRENT') {
+      watching.push(animeEntry);
+    } else {
+      // Find latest color for COMPLETED
+      if (entry.completedAt && entry.completedAt.year) {
+        const { year, month, day } = entry.completedAt;
+        const m = month || 1;
+        const d = day || 1;
+        const dateVal = (year * 10000) + (m * 100) + d;
+        if (dateVal > latestDateValue) {
+          latestDateValue = dateVal;
+          latestColor = media.coverImage.color;
+        }
+      }
+
+      if (!grouped[animeEntry.year]) {
+        grouped[animeEntry.year] = { WINTER: [], SPRING: [], SUMMER: [], FALL: [], UNKNOWN: [] };
+      }
+      grouped[animeEntry.year][animeEntry.season as keyof SeasonGroup].push(animeEntry);
+    }
   }
 
   const sortedYears = Object.keys(grouped).map(Number).sort((a, b) => b - a);
@@ -164,6 +175,7 @@ function processEntries(entries: any[]): ProcessedData {
   }
 
   return {
+    watching,
     timeline: result,
     latestColor
   };

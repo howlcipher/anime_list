@@ -34,9 +34,14 @@ function hideError() {
 }
 
 function renderCard(entry: AnimeEntry, showScore: boolean = true, secondScore?: number): string {
-  let scoreHtml = showScore && entry.score > 0 ? `<div class="card-score">★ ${entry.score}</div>` : '';
+  let extraHtml = '';
   if (secondScore !== undefined) {
-    scoreHtml = `<div class="card-score">U1: ${entry.score} | U2: ${secondScore}</div>`;
+    extraHtml = `<div class="card-score">U1: ${entry.score} | U2: ${secondScore}</div>`;
+  } else if (entry.listStatus === 'CURRENT') {
+    let txt = `${entry.season !== 'UNKNOWN' ? entry.season : ''} ${entry.year}`.trim();
+    extraHtml = `<div class="card-score">${txt || 'WATCHING'}</div>`;
+  } else if (showScore && entry.score > 0) {
+    extraHtml = `<div class="card-score">★ ${entry.score}</div>`;
   }
 
   return `
@@ -44,17 +49,29 @@ function renderCard(entry: AnimeEntry, showScore: boolean = true, secondScore?: 
       <img src="${entry.cover}" alt="Cover art for ${entry.title}" class="card-image" loading="lazy">
       <div class="card-info">
         <h3 class="card-title">${entry.title}</h3>
-        ${scoreHtml}
+        ${extraHtml}
       </div>
     </article>
   `;
 }
 
-function renderTimeline(data: YearGroup[], container: HTMLElement) {
+function renderTimeline(timeline: YearGroup[], watching: AnimeEntry[], container: HTMLElement) {
   let html = '';
+  
+  if (watching.length > 0) {
+    html += `
+      <section class="year-section">
+        <h2 class="year-title">Currently Watching</h2>
+        <div class="card-grid" style="margin-bottom: 2rem;">
+          ${watching.map(e => renderCard(e)).join('')}
+        </div>
+      </section>
+    `;
+  }
+
   const seasonsOrder = ['WINTER', 'SPRING', 'SUMMER', 'FALL', 'UNKNOWN'];
 
-  for (const yearGrp of data) {
+  for (const yearGrp of timeline) {
     let hasEntries = false;
     let yearHtml = `<section class="year-section"><h2 class="year-title">${yearGrp.year}</h2>`;
 
@@ -82,22 +99,28 @@ function renderTimeline(data: YearGroup[], container: HTMLElement) {
   container.innerHTML = html;
 }
 
-function renderComparison(u1Name: string, u2Name: string, u1Data: YearGroup[], u2Data: YearGroup[]) {
+function renderComparison(u1Name: string, u2Name: string, u1Data: any, u2Data: any) {
   // Flatten to map for easy lookup
   const u1Map = new Map<number, AnimeEntry>();
   const u2Map = new Map<number, AnimeEntry>();
 
-  u1Data.forEach(y => {
-    Object.values(y.seasons).forEach((arr: AnimeEntry[]) => {
-      arr.forEach(e => u1Map.set(e.id, e));
+  u1Data.timeline.forEach((y: any) => {
+    Object.values(y.seasons).forEach((arr: any) => {
+      arr.forEach((e: AnimeEntry) => u1Map.set(e.id, e));
     });
   });
+  if (u1Data.watching) {
+    u1Data.watching.forEach((e: AnimeEntry) => u1Map.set(e.id, e));
+  }
 
-  u2Data.forEach(y => {
-    Object.values(y.seasons).forEach((arr: AnimeEntry[]) => {
-      arr.forEach(e => u2Map.set(e.id, e));
+  u2Data.timeline.forEach((y: any) => {
+    Object.values(y.seasons).forEach((arr: any) => {
+      arr.forEach((e: AnimeEntry) => u2Map.set(e.id, e));
     });
   });
+  if (u2Data.watching) {
+    u2Data.watching.forEach((e: AnimeEntry) => u2Map.set(e.id, e));
+  }
 
   const matches: { e1: AnimeEntry, e2: AnimeEntry }[] = [];
   const onlyU1: AnimeEntry[] = [];
@@ -165,7 +188,7 @@ async function handleLoad() {
         document.documentElement.style.removeProperty('--dynamic-secondary');
       }
       
-      renderComparison(u1, u2, u1Data.timeline, u2Data.timeline);
+      renderComparison(u1, u2, u1Data, u2Data);
     } else {
       if (u1Data.latestColor) {
         document.documentElement.style.setProperty('--dynamic-primary', u1Data.latestColor);
@@ -174,7 +197,7 @@ async function handleLoad() {
       }
       document.documentElement.style.removeProperty('--dynamic-secondary');
       
-      renderTimeline(u1Data.timeline, archiveContent);
+      renderTimeline(u1Data.timeline, u1Data.watching, archiveContent);
     }
   } catch (err: any) {
     showError(err.message || 'Failed to fetch data.');

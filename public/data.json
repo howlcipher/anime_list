@@ -1,0 +1,2345 @@
+[
+  {
+    "year": 2026,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 166613,
+          "title": "Jigokuraku 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166613-uHB8q3D4qbon.jpg",
+          "color": "#e49328",
+          "score": 7
+        },
+        {
+          "id": 182255,
+          "title": "Sousou no Frieren 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182255-butzrqd4I0aC.jpg",
+          "color": "#5dc9f1",
+          "score": 8
+        },
+        {
+          "id": 172463,
+          "title": "Jujutsu Kaisen: Shimetsu Kaiyuu - Zenpen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx172463-LnXqHzt74SJL.jpg",
+          "color": "#78aee4",
+          "score": 8.5
+        },
+        {
+          "id": 163144,
+          "title": "TRIGUN STARGAZE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163144-XdVwFRxPGY6j.jpg",
+          "color": "#e4bb50",
+          "score": 8
+        },
+        {
+          "id": 166521,
+          "title": "Golden Kamuy: Saishuushou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b166521-yvCHzltGGU2X.jpg",
+          "color": "#ff8643",
+          "score": 8.3
+        },
+        {
+          "id": 194318,
+          "title": "Yoroi Shinden Samurai Troopers",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx194318-V3STmm4wutVQ.jpg",
+          "color": "#e4781a",
+          "score": 7.5
+        },
+        {
+          "id": 167152,
+          "title": "Yuusha Kei ni Shosu: Choubatsu Yuusha 9004-tai Keimu Kiroku",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx167152-O1pm6DWwifBD.jpg",
+          "color": "#f1a15d",
+          "score": 7
+        },
+        {
+          "id": 190327,
+          "title": "JoJo no Kimyou na Bouken: Steel Ball Run - 1st STAGE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx190327-riJNCFL7w9y4.jpg",
+          "color": "#5dbbf1",
+          "score": 9
+        },
+        {
+          "id": 166617,
+          "title": "Fate/strange Fake",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166617-34fpC9y47tTx.png",
+          "color": "#1a0df1",
+          "score": 8.3
+        },
+        {
+          "id": 177385,
+          "title": "Ikoku Nikki",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177385-TBpvkGdF28R7.png",
+          "color": "#aee4e4",
+          "score": 9
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 179813,
+          "title": "Niwatori Fighter",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx179813-cLHpUPV1IiEm.jpg",
+          "color": "#e45d43",
+          "score": 6.5
+        },
+        {
+          "id": 147105,
+          "title": "Tongari Boushi no Atelier",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx147105-rwOX8qyUy8gV.jpg",
+          "color": "#0d8693",
+          "score": 8.5
+        },
+        {
+          "id": 199547,
+          "title": "MARRIAGETOXIN",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199547-LAaG3cmKCGhr.jpg",
+          "color": "#1ae4f1",
+          "score": 7
+        },
+        {
+          "id": 173172,
+          "title": "Dorohedoro Season 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx173172-404XnuOS0DhR.jpg",
+          "color": "#e4861a",
+          "score": 9.5
+        },
+        {
+          "id": 196144,
+          "title": "Snowball Earth",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx196144-UqVOcMjThkqa.jpg",
+          "color": "#f1c950",
+          "score": 7
+        },
+        {
+          "id": 198113,
+          "title": "Kill Ao",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx198113-NRa47idWSlnx.jpg",
+          "color": "#50aefe",
+          "score": 6
+        },
+        {
+          "id": 206914,
+          "title": "Nippon Sangoku",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx206914-SHKX08LarRzB.jpg",
+          "color": "#35c9e4",
+          "score": 8.1
+        },
+        {
+          "id": 169228,
+          "title": "Hokuto no Ken: FIST OF THE NORTH STAR",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx169228-y79xDpZ29Vv4.jpg",
+          "color": "#f1bb28",
+          "score": 8
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2025,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 177709,
+          "title": "SAKAMOTO DAYS",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177709-e5Qx6RlsBgD5.png",
+          "color": "#c9f1f1",
+          "score": 7
+        },
+        {
+          "id": 176496,
+          "title": "Ore dake Level Up na Ken: Season 2 - Arise from the Shadow",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx176496-9BDMjAZGEbq4.png",
+          "color": "#e45093",
+          "score": 8
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 185213,
+          "title": "Kidou Senshi Gundam GQuuuuuuX",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185213-RKQN0qxKlqd6.jpg",
+          "color": "#1ad61a",
+          "score": 6
+        },
+        {
+          "id": 178781,
+          "title": "Sentai Daishikkaku 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178781-pbk5FgfiAJxS.jpg",
+          "color": "#35a1ae",
+          "score": 8.3
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 184237,
+          "title": "SAKAMOTO DAYS Part 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx184237-OJAksU2fsIPx.jpg",
+          "color": "#e4c943",
+          "score": 8
+        },
+        {
+          "id": 178788,
+          "title": "Kimetsu no Yaiba: Mugenjou-hen Movie 1 - Akaza Sairai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178788-zm3gtpB9TpRt.jpg",
+          "color": "#35bbe4",
+          "score": 8
+        },
+        {
+          "id": 185660,
+          "title": "Dandadan 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx185660-uB8RUMBGovGr.jpg",
+          "color": "#f1ae28",
+          "score": 7
+        },
+        {
+          "id": 177689,
+          "title": "Hikaru ga Shinda Natsu",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177689-d0mB5nYgdnhi.jpg",
+          "color": "#bbe4f1",
+          "score": 8
+        },
+        {
+          "id": 171627,
+          "title": "Chainsaw Man: Reze-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171627-ZN9D7P46yHnw.png",
+          "color": "#e43550",
+          "score": 8.5
+        },
+        {
+          "id": 178754,
+          "title": "Kaijuu 8-gou 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx178754-Dgrub8xgC03M.jpg",
+          "color": "#e4ae43",
+          "score": 7.7
+        }
+      ],
+      "FALL": [
+        {
+          "id": 153800,
+          "title": "One Punch Man 3",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153800-8SpzdHOaZCoU.jpg",
+          "color": "#e4ae50",
+          "score": 7
+        },
+        {
+          "id": 187464,
+          "title": "Toujima Tanzaburou wa Kamen Rider ni Naritai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx187464-NJtK3VC54vPm.jpg",
+          "color": "#e4bb43",
+          "score": 7.5
+        },
+        {
+          "id": 186794,
+          "title": "Ansatsusha de Aru Ore no Status ga Yuusha yori mo Akiraka ni Tsuyoi no da ga",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx186794-Ns8xWNdMdOxq.jpg",
+          "color": "#4378e4",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2024,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 151807,
+          "title": "Ore dake Level Up na Ken",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151807-it355ZgzquUd.png",
+          "color": "#35bbf1",
+          "score": 8
+        },
+        {
+          "id": 162985,
+          "title": "Metallic Rouge",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162985-3J7PrG5oO67v.jpg",
+          "color": "#e45da1",
+          "score": 7
+        },
+        {
+          "id": 153818,
+          "title": "Majo to Yajuu",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153818-FWvl0RL6vDbq.png",
+          "color": "#aeaee4",
+          "score": 7
+        },
+        {
+          "id": 153518,
+          "title": "Dungeon Meshi",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153518-IVXPDY5ph3kO.jpg",
+          "color": "#e48650",
+          "score": 8.5
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 166240,
+          "title": "Kimetsu no Yaiba: Hashira Geiko-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx166240-PBV7zukIHW7V.png",
+          "color": "#e4d6ae",
+          "score": 7
+        },
+        {
+          "id": 153288,
+          "title": "Kaijuu 8-gou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153288-25FBfFJzEQ5O.jpg",
+          "color": "#f1e4ae",
+          "score": 8
+        },
+        {
+          "id": 158417,
+          "title": "Sentai Daishikkaku",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx158417-Ii0DOFwNim0A.jpg",
+          "color": "#e4bb50",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 162896,
+          "title": "Nige Jouzu no Wakagimi",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162896-hSMTVceb50GY.jpg",
+          "color": "#f1860d",
+          "score": 7
+        },
+        {
+          "id": 177814,
+          "title": "Terminator 0",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx177814-Xr9F98LExkWd.jpg",
+          "color": "#e4780d",
+          "score": 8
+        },
+        {
+          "id": 126830,
+          "title": "Code Geass: Dakkan no Rozé",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx126830-Mx56p5DMIjiq.png",
+          "color": "#1a50f1",
+          "score": 7
+        }
+      ],
+      "FALL": [
+        {
+          "id": 171018,
+          "title": "Dandadan",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx171018-60q1B6GK2Ghb.jpg",
+          "color": "#e47850",
+          "score": 7
+        },
+        {
+          "id": 171637,
+          "title": "Rurouni Kenshin: Meiji Kenkaku Romantan - Kyoto Douran",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b171637-h17RbEFtR0rQ.png",
+          "color": "#e44328",
+          "score": 7.5
+        },
+        {
+          "id": 170468,
+          "title": "Raise wa Tanin ga Ii",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx170468-kD2X9O2XM9KH.jpg",
+          "color": "#e46b50",
+          "score": 7.5
+        },
+        {
+          "id": 151514,
+          "title": "Chi. Chikyuu no Undou ni Tsuite",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151514-Y0d82Ah2ZOHX.jpg",
+          "color": "#333333",
+          "score": 10
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2023,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 151040,
+          "title": "TRIGUN STAMPEDE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx151040-9QXRpaprfNmL.png",
+          "color": "#5da1e4",
+          "score": 8
+        },
+        {
+          "id": 141249,
+          "title": "Bungou Stray Dogs 4th Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141249-8tjavEDHmLoT.jpg",
+          "color": "#fe5d50",
+          "score": 7.5
+        },
+        {
+          "id": 141785,
+          "title": "Mononogatari",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx141785-JD5DIMZotNYc.png",
+          "color": "#6b281a",
+          "score": 7
+        },
+        {
+          "id": 140499,
+          "title": "BLUE GIANT",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx140499-Yr7YLk6suS0K.jpg",
+          "color": "#e4a150",
+          "score": 9
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 153687,
+          "title": "PSYCHO-PASS PROVIDENCE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx153687-xB2x4toOz5MB.jpg",
+          "color": "#1a436b",
+          "score": 7
+        },
+        {
+          "id": 145139,
+          "title": "Kimetsu no Yaiba: Katanakaji no Sato-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145139-rRimpHGWLhym.png",
+          "color": "#1aaed6",
+          "score": 8.6
+        },
+        {
+          "id": 128893,
+          "title": "Jigokuraku",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx128893-Gc2t8b8M0mVu.jpg",
+          "color": "#e4bb35",
+          "score": 7
+        },
+        {
+          "id": 155158,
+          "title": "Kidou Senshi Gundam: Suisei no Majo Season 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx155158-4MO3TP5plLSm.jpg",
+          "color": "#5d93d6",
+          "score": 7.5
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 142877,
+          "title": "Rurouni Kenshin: Meiji Kenkaku Romantan (2023)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142877-FrXXLsgXYQAp.jpg",
+          "color": "#e48650",
+          "score": 7
+        },
+        {
+          "id": 163263,
+          "title": "Bungou Stray Dogs 5th Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163263-uz881pFAyi7P.jpg",
+          "color": "#e41aa1",
+          "score": 8
+        },
+        {
+          "id": 162983,
+          "title": "Undead Girl Murder Farce",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx162983-T3nZyk6sUlEj.jpg",
+          "color": "#c98650",
+          "score": 7.5
+        },
+        {
+          "id": 163205,
+          "title": "Mononogatari 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx163205-s9TZY5bb99oB.png",
+          "color": "#e46b5d",
+          "score": 7
+        },
+        {
+          "id": 159831,
+          "title": "Zom 100: Zombie ni Naru Made ni Shitai 100 no Koto",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx159831-cJUNqCqzuApc.png",
+          "color": "#e4f135",
+          "score": 7.5
+        },
+        {
+          "id": 145064,
+          "title": "Jujutsu Kaisen 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx145064-hSNRJM03pvv1.jpg",
+          "color": "#a178d6",
+          "score": 8.5
+        },
+        {
+          "id": 154966,
+          "title": "Fate/strange Fake: Whispers of Dawn",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154966-eQRCmSrCh96j.png",
+          "color": "#50c9f1",
+          "score": 8
+        }
+      ],
+      "FALL": [
+        {
+          "id": 161645,
+          "title": "Kusuriya no Hitorigoto",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx161645-QLbzHXiYRgV2.jpg",
+          "color": "#f1865d",
+          "score": 8
+        },
+        {
+          "id": 154587,
+          "title": "Sousou no Frieren",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx154587-qQTzQnEJJ3oB.jpg",
+          "color": "#bbf1a1",
+          "score": 9.5
+        },
+        {
+          "id": 99088,
+          "title": "PLUTO",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99088-LTJskMD1wbbQ.png",
+          "color": "#e43535",
+          "score": 9
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2022,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 142329,
+          "title": "Kimetsu no Yaiba: Yuukaku-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142329-kET1PIXJv2eW.jpg",
+          "color": "#f19350",
+          "score": 8
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 108353,
+          "title": "SPRIGGAN (ONA)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108353-f43dOeHJ84r4.jpg",
+          "color": "#50aef1",
+          "score": 6.5
+        },
+        {
+          "id": 109928,
+          "title": "Inu-ou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx109928-DWUN0zrDJfuv.jpg",
+          "color": "#e44350",
+          "score": 8
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 146722,
+          "title": "JoJo no Kimyou na Bouken: Stone Ocean Part 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146722-hiZU7M33fBhn.jpg",
+          "color": "#1ad643",
+          "score": 8.5
+        },
+        {
+          "id": 146922,
+          "title": "Kidou Senshi Gundam: Suisei no Majo - PROLOGUE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx146922-kcxcovDGRHGd.png",
+          "color": "#333333",
+          "score": 7
+        },
+        {
+          "id": 120377,
+          "title": "Cyberpunk: Edgerunners",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx120377-ayZPoxiWt4Li.jpg",
+          "color": "#78f150",
+          "score": 8.5
+        },
+        {
+          "id": 131912,
+          "title": "Fuuto Tantei",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131912-80XB9ZQGLuuS.jpg",
+          "color": "#333333",
+          "score": 7
+        }
+      ],
+      "FALL": [
+        {
+          "id": 127230,
+          "title": "Chainsaw Man",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx127230-DdP4vAdssLoz.png",
+          "color": "#6b1a1a",
+          "score": 8
+        },
+        {
+          "id": 142343,
+          "title": "Golden Kamuy 4th Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx142343-o8gkjIF434qZ.jpg",
+          "color": "#333333",
+          "score": 8
+        },
+        {
+          "id": 139274,
+          "title": "Kidou Senshi Gundam: Suisei no Majo",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx139274-0NJTOKWHdDew.png",
+          "color": "#c9a11a",
+          "score": 6
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2021,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 116589,
+          "title": "86: Eighty Six",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx116589-KawXHB6sApFt.jpg",
+          "color": "#bbd6f1",
+          "score": 8
+        },
+        {
+          "id": 105595,
+          "title": "Kidou Senshi Gundam: Senkou no Hathaway",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105595-40ugr6S9NfOb.jpg",
+          "color": "#e49350",
+          "score": 8.5
+        },
+        {
+          "id": 125426,
+          "title": "Gokushufudou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx125426-WeKnIVjCRNIC.png",
+          "color": "#e4bb50",
+          "score": 7.5
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 131586,
+          "title": "86: Eighty Six Part 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131586-JhC0wcBi09EZ.jpg",
+          "color": "#e4501a",
+          "score": 8
+        },
+        {
+          "id": 131942,
+          "title": "JoJo no Kimyou na Bouken: Stone Ocean",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131942-rermlZ9lplHX.png",
+          "color": "#288678",
+          "score": 8.5
+        },
+        {
+          "id": 131573,
+          "title": "Jujutsu Kaisen 0",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx131573-rpl82vDEDRm6.jpg",
+          "color": "#f1c95d",
+          "score": 8
+        },
+        {
+          "id": 129874,
+          "title": "Kimetsu no Yaiba: Mugen Ressha-hen (TV)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129874-g6ZKXB94Hui1.jpg",
+          "color": "#f1a15d",
+          "score": 8
+        },
+        {
+          "id": 132193,
+          "title": "Gokushufudou Part 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx132193-sooBNRHdfLZu.jpg",
+          "color": "#f1e443",
+          "score": 7.6
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2020,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 105228,
+          "title": "Dorohedoro",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx105228-I4xr84QS9Pvk.jpg",
+          "color": "#6b431a",
+          "score": 8.3
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 113917,
+          "title": "PSYCHO-PASS 3: FIRST INSPECTOR",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113917-lmW1flyIYU78.png",
+          "color": "#f11a1a",
+          "score": 8
+        },
+        {
+          "id": 114622,
+          "title": "Dorohedoro: Ma no Omake",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx114622-mpMhXM8JqCjc.png",
+          "color": "#864328",
+          "score": 6
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 113415,
+          "title": "Jujutsu Kaisen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx113415-LHBAeoZDIsnF.jpg",
+          "color": "#e45d5d",
+          "score": 9
+        },
+        {
+          "id": 110355,
+          "title": "Golden Kamuy 3rd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx110355-yXOXm5tr8kgr.png",
+          "color": "#333333",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2019,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 97880,
+          "title": "Code Geass: Fukkatsu no Lelouch",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97880-sZWHViJfrvXm.jpg",
+          "color": "#4386e4",
+          "score": 7
+        },
+        {
+          "id": 102649,
+          "title": "PSYCHO-PASS Sinners of the System Case 1: Tsumi to Batsu",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx102649-gfShc1x0QQZv.jpg",
+          "color": "#e4bba1",
+          "score": 7
+        },
+        {
+          "id": 104382,
+          "title": "PSYCHO-PASS Sinners of the System Case 2: First Guardian",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx104382-uUSwPWXZ8f8n.jpg",
+          "color": "#5da1f1",
+          "score": 7
+        },
+        {
+          "id": 21718,
+          "title": "Fate/stay night [Heaven's Feel] II. lost butterfly",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21718-Hjj26Sapx1bd.jpg",
+          "color": "#f15093",
+          "score": 7
+        },
+        {
+          "id": 101347,
+          "title": "Dororo",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101347-TGaDwEYqLfm1.jpg",
+          "color": "#d6bb6b",
+          "score": 8.3
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 97668,
+          "title": "One Punch Man 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx97668-nC8gQrXVxt7k.png",
+          "color": "#e4bb50",
+          "score": 7
+        },
+        {
+          "id": 101922,
+          "title": "Kimetsu no Yaiba",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101922-WBsBl0ClmgYL.jpg",
+          "color": "#f1c9ae",
+          "score": 8
+        },
+        {
+          "id": 103223,
+          "title": "Bungou Stray Dogs 3rd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx103223-bfdnnKWxE4YE.jpg",
+          "color": "#333333",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 107905,
+          "title": "Dragon Quest: Your Story",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx107905-qQMO9VYh4TqY.jpg",
+          "color": "#e4ae5d",
+          "score": 8
+        }
+      ],
+      "FALL": [
+        {
+          "id": 108307,
+          "title": "PSYCHO-PASS 3",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx108307-2vfdTNsxoS8H.jpg",
+          "color": "#50a1e4",
+          "score": 8
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2018,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 98384,
+          "title": "Bungou Stray Dogs: DEAD APPLE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx98384-nXEnNzwiJ9BV.jpg",
+          "color": "#28a1e4",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 21127,
+          "title": "Steins;Gate 0",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21127-7ARWZkDXKiiD.jpg",
+          "color": "#f1d6bb",
+          "score": 8
+        },
+        {
+          "id": 99699,
+          "title": "Golden Kamuy",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx99699-mBCjpoWpAVGX.jpg",
+          "color": "#78281a",
+          "score": 8
+        },
+        {
+          "id": 100248,
+          "title": "Ninja Batman",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100248-fRhZeBkbrkgY.jpg",
+          "color": "#e41a28",
+          "score": 6
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 101554,
+          "title": "Kidou Senshi Gundam NT",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx101554-wSg5tvmASqEy.jpg",
+          "color": "#1a93e4",
+          "score": 6
+        },
+        {
+          "id": 102883,
+          "title": "JoJo no Kimyou na Bouken: Ougon no Kaze",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx102883-S9KzdMJhDswJ.png",
+          "color": "#fff1bb",
+          "score": 6
+        },
+        {
+          "id": 100093,
+          "title": "Gaikotsu Shotenin Honda-san",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx100093-93Stk25kws5e.jpg",
+          "color": "#50f135",
+          "score": 7.5
+        },
+        {
+          "id": 102977,
+          "title": "Golden Kamuy 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx102977-gUejfwQWpnzX.png",
+          "color": "#e4c91a",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2017,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 98663,
+          "title": "Koutetsujou no Kabaneri Soushuuhen Kouhen: Moeru Inochi",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/98663-XstxoaIgHhiU.jpg",
+          "color": "#e49350",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 21498,
+          "title": "BLAME!",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21498-8GWg2HVFdShU.jpg",
+          "color": "#5dc9f1",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 21778,
+          "title": "Kishibe Rohan wa Ugokanai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21778-pCUJjJuP7Pmd.png",
+          "color": "#e4c943",
+          "score": 7.5
+        }
+      ],
+      "FALL": [
+        {
+          "id": 20791,
+          "title": "Fate/stay night [Heaven's Feel] I. presage flower",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20791-yPCX5GJuMH2k.png",
+          "color": "#e44350",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2016,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 21458,
+          "title": "Kidou Senshi Gundam Thunderbolt",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21458-ZsdVYYdDiGAF.jpg",
+          "color": "#f1c9a1",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 21450,
+          "title": "JoJo no Kimyou na Bouken: Diamond wa Kudakenai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21450-D7XFwEQjZ5GA.jpg",
+          "color": "#c9a150",
+          "score": 8
+        },
+        {
+          "id": 21196,
+          "title": "Koutetsujou no Kabaneri",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21196-2PfPfIDrxKki.jpg",
+          "color": "#e48650",
+          "score": 7
+        },
+        {
+          "id": 21311,
+          "title": "Bungou Stray Dogs",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21311-hAXyT8Yoh6G9.jpg",
+          "color": "#e4bb50",
+          "score": 7
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 21749,
+          "title": "Kidou Senshi Gundam: Tekketsu no Orphans 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21749-tO6zfDKFesgl.jpg",
+          "color": "#333333",
+          "score": 8
+        },
+        {
+          "id": 21679,
+          "title": "Bungou Stray Dogs 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21679-9MKdz1A7YLV7.jpg",
+          "color": "#f1e4ae",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2015,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 10937,
+          "title": "Kidou Senshi Gundam: THE ORIGIN",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10937-yNrI4MUsigat.png",
+          "color": "#e46b5d",
+          "score": 8
+        },
+        {
+          "id": 20799,
+          "title": "JoJo no Kimyou na Bouken: Stardust Crusaders - Egypt-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20799-S1eyqBDlx51E.jpg",
+          "color": "#6b281a",
+          "score": 8
+        },
+        {
+          "id": 20514,
+          "title": "PSYCHO-PASS Movie",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20514-WhWrHdWWonsC.jpg",
+          "color": "#333333",
+          "score": 7.5
+        },
+        {
+          "id": 20931,
+          "title": "Death Parade",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx20931-bktYqOcxPERi.jpg",
+          "color": "#35a1f1",
+          "score": 8
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 20778,
+          "title": "Dragon Ball Z: Fukkatsu no \"F\"",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20778-HYEes09iv8fJ.jpg",
+          "color": "#e4a128",
+          "score": 6
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 20981,
+          "title": "Bakemono no Ko",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20981-D6PAJAOC4jPc.jpg",
+          "color": "#50c9e4",
+          "score": 8
+        }
+      ],
+      "FALL": [
+        {
+          "id": 21268,
+          "title": "Kidou Senshi Gundam: Tekketsu no Orphans",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx21268-6dKrz26PPUvk.jpg",
+          "color": "#f1d6bb",
+          "score": 8
+        },
+        {
+          "id": 21087,
+          "title": "One Punch Man",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx21087-B5DHjqZ3kW4b.jpg",
+          "color": "#e4ae5d",
+          "score": 8
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2014,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 20057,
+          "title": "Space☆Dandy",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20057-tG83EpH5Gu8K.jpg",
+          "color": "#e4ae50",
+          "score": 8.3
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 20474,
+          "title": "JoJo no Kimyou na Bouken: Stardust Crusaders",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20474-xuqem5GBlBtb.jpg",
+          "color": "#333333",
+          "score": 8
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 20666,
+          "title": "Space☆Dandy 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20666-uuCrKd28BFsT.jpg",
+          "color": "#f1d60d",
+          "score": 8.5
+        }
+      ],
+      "FALL": [
+        {
+          "id": 20513,
+          "title": "PSYCHO-PASS 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx20513-pVQqYhMwBGoh.jpg",
+          "color": "#f1505d",
+          "score": 8
+        },
+        {
+          "id": 19603,
+          "title": "Fate/stay night: Unlimited Blade Works",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19603-ycT0pyEgDVQu.jpg",
+          "color": "#e4a135",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2013,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 16498,
+          "title": "Shingeki no Kyojin",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx16498-buvcRTBx4NSm.jpg",
+          "color": "#f1a143",
+          "score": 6
+        },
+        {
+          "id": 14837,
+          "title": "Dragon Ball Z: Kami to Kami",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/14837.jpg",
+          "color": "#d6931a",
+          "score": 7
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2012,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 11111,
+          "title": "Another",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11111-gvvE5bBYsyFo.png",
+          "color": "#e47850",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 11741,
+          "title": "Fate/Zero 2nd Season",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx11741-oEy1fJHYm2zJ.jpg",
+          "color": "#e4781a",
+          "score": 7
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 13601,
+          "title": "PSYCHO-PASS",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx13601-i42VFuHpqEOJ.jpg",
+          "color": "#288686",
+          "score": 8
+        },
+        {
+          "id": 14719,
+          "title": "JoJo no Kimyou na Bouken (TV)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx14719-VT5dRzTBSZ0w.jpg",
+          "color": "#e49343",
+          "score": 6
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2011,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 6954,
+          "title": "Kara no Kyoukai: Shuushou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6954-uMdvQ3Vy74Oa.png",
+          "color": "#e4861a",
+          "score": 5
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 9253,
+          "title": "Steins;Gate",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx9253-tIUXF2gfU8Sg.jpg",
+          "color": "#ffd6ae",
+          "score": 9
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 10087,
+          "title": "Fate/Zero",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx10087-M4Hd9qrHGrXk.png",
+          "color": "#e4d65d",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2010,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 6336,
+          "title": "Kidou Senshi Gundam UC",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6336-jdAs058XtObM.jpg",
+          "color": "#f1935d",
+          "score": 7.5
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 4106,
+          "title": "TRIGUN: Badlands Rumble",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4106-CXXSDuA4PgAu.jpg",
+          "color": "#e45043",
+          "score": 7
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 6288,
+          "title": "Kidou Senshi Gundam 00: A wakening of the Trailblazer",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b6288-I4jOmHgNyOvg.png",
+          "color": "#0d35f1",
+          "score": 6
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2009,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 5204,
+          "title": "Kara no Kyoukai: Boukyaku Rokuon",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5204-6PdYdIXswcEo.png",
+          "color": "#2850a1",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 5114,
+          "title": "Hagane no Renkinjutsushi: FULLMETAL ALCHEMIST",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5114-nSWCgQlmOMtj.jpg",
+          "color": "#e4c993",
+          "score": 9
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 5205,
+          "title": "Kara no Kyoukai: Satsujin Kousatsu (Kou)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5205-kfgpEQI8ERza.jpg",
+          "color": "#5093f1",
+          "score": 7
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2008,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 3782,
+          "title": "Kara no Kyoukai: Satsujin Kousatsu (Zen)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3782-b8NzFcoYs9vc.jpg",
+          "color": "#fe9350",
+          "score": 7
+        },
+        {
+          "id": 3783,
+          "title": "Kara no Kyoukai: Tsuukaku Zanryuu",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx3783-NziqsWetU1LK.jpg",
+          "color": "#0daee4",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 2904,
+          "title": "Code Geass: Hangyaku no Lelouch R2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2904-Fet9Q33suC7G.jpg",
+          "color": "#e4bb50",
+          "score": 8
+        },
+        {
+          "id": 4280,
+          "title": "Kara no Kyoukai: Garan no Dou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4280-GKUNVjzu5sUO.png",
+          "color": "#e4355d",
+          "score": 7.5
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 2890,
+          "title": "Gake no Ue no Ponyo",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2890-wcNtFr6aUYOR.jpg",
+          "color": "#50bbe4",
+          "score": 9
+        },
+        {
+          "id": 4282,
+          "title": "Kara no Kyoukai: Mujun Rasen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx4282-R19YmET0glSZ.jpg",
+          "color": "#333333",
+          "score": 7.6
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2007,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 1818,
+          "title": "CLAYMORE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1818-KieLJv0qo3mO.jpg",
+          "color": "#bbe4ae",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 2216,
+          "title": "Shigurui",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx2216-90YquKJllawX.jpg",
+          "color": "#780d0d",
+          "score": 7.7
+        }
+      ],
+      "FALL": [
+        {
+          "id": 2581,
+          "title": "Kidou Senshi Gundam 00",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2581-MLEf00dNAfqY.jpg",
+          "color": "#f19335",
+          "score": 8
+        },
+        {
+          "id": 2593,
+          "title": "Kara no Kyoukai: Fukan Fuukei",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2593-FsRHa8PIl2OJ.jpg",
+          "color": "#e44343",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2006,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 790,
+          "title": "Ergo Proxy",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx790-YTUCvBKX8ZWK.jpg",
+          "color": "#333333",
+          "score": 7
+        },
+        {
+          "id": 777,
+          "title": "HELLSING OVA",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx777-F6547pSAR2Zd.jpg",
+          "color": "#e4431a",
+          "score": 8.3
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 889,
+          "title": "BLACK LAGOON",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx889-4S7N2ciq2cwA.png",
+          "color": "#f1bb93",
+          "score": 8
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 1566,
+          "title": "Koukaku Kidoutai: STAND ALONE COMPLEX - Solid State Society",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1566-FSNFIcsT91Ni.jpg",
+          "color": "#f1e4c9",
+          "score": 7
+        },
+        {
+          "id": 1535,
+          "title": "DEATH NOTE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1535-kUgkcrfOrkUM.jpg",
+          "color": "#333333",
+          "score": 9
+        },
+        {
+          "id": 1575,
+          "title": "Code Geass: Hangyaku no Lelouch",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1575-hsmWM2ydNm1m.jpg",
+          "color": "#c9d678",
+          "score": 8.5
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2005,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 317,
+          "title": "Final Fantasy VII: Advent Children",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b317-ay0Rw7kxgLVD.jpg",
+          "color": "#333333",
+          "score": 8
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2004,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 801,
+          "title": "Koukaku Kidoutai: Stand Alone Complex 2nd GIG",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx801-nF9RyvPJu6s4.jpg",
+          "color": "#333333",
+          "score": 8
+        },
+        {
+          "id": 1023,
+          "title": "Wolf's Rain OVA",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1023.jpg",
+          "color": "#86bbe4",
+          "score": 9
+        },
+        {
+          "id": 974,
+          "title": "Dead Leaves",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx974-tGKrYtZAg4Wz.png",
+          "color": "#1a50d6",
+          "score": 6
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 468,
+          "title": "Innocence",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx468-rfiX1uY8bsPp.jpg",
+          "color": "#333333",
+          "score": 7
+        },
+        {
+          "id": 205,
+          "title": "Samurai Champloo",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx205-7tHVFu6dPBm9.png",
+          "color": "#333333",
+          "score": 9
+        },
+        {
+          "id": 19,
+          "title": "MONSTER",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx19-gtMC64182sm4.jpg",
+          "color": "#333333",
+          "score": 10
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 565,
+          "title": "Steamboy",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx565-XWjoGw6sOoqo.png",
+          "color": "#ae5028",
+          "score": 7
+        }
+      ],
+      "FALL": [
+        {
+          "id": 431,
+          "title": "Howl no Ugoku Shiro",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx431-o8Lj3XkjHm2k.jpg",
+          "color": "#0daee4",
+          "score": 10
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2003,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 202,
+          "title": "Wolf's Rain",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx202-w2OLL3j8WmDm.jpg",
+          "color": "#f16b00",
+          "score": 9.9
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 618,
+          "title": "Juubee Ninpuuchou: Ryuuhougyoku-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/618.jpg",
+          "color": "#d6431a",
+          "score": 6
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 1303,
+          "title": "Animatrix",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1303-Y09OcK2V0KmJ.jpg",
+          "color": "#e4c95d",
+          "score": 9
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2002,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 467,
+          "title": "Koukaku Kidoutai: STAND ALONE COMPLEX",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx467-mBTtIoR13qs2.jpg",
+          "color": "#5da1e4",
+          "score": 9
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2001,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [],
+      "SUMMER": [
+        {
+          "id": 5,
+          "title": "Cowboy Bebop: Tengoku no Tobira",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx5-NozHwXWdNLCz.jpg",
+          "color": "#f13500",
+          "score": 9
+        },
+        {
+          "id": 199,
+          "title": "Sen to Chihiro no Kamikakushi",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx199-sWefXJvXkDOb.jpg",
+          "color": "#e45d5d",
+          "score": 9
+        },
+        {
+          "id": 1361,
+          "title": "Final Fantasy",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1361-jyjigHHRkzMO.jpg",
+          "color": "#febb50",
+          "score": 5
+        }
+      ],
+      "FALL": [
+        {
+          "id": 270,
+          "title": "HELLSING",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b270-S2ProngvO6BU.jpg",
+          "color": "#e4ae43",
+          "score": 7
+        },
+        {
+          "id": 156,
+          "title": "X (TV)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b156-MSqEz70iYng4.png",
+          "color": "#3593f1",
+          "score": 10
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 2000,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 570,
+          "title": "JIN-ROH",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx570-xyP4IO7i3ua2.jpg",
+          "color": "#e4c993",
+          "score": 7
+        },
+        {
+          "id": 227,
+          "title": "FLCL",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx227-qOB9ZhVvNnqO.jpg",
+          "color": "#e4865d",
+          "score": 8
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 543,
+          "title": "Vampire Hunter D (2000)",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx543-MAeWIDl4TwuG.png",
+          "color": "#333333",
+          "score": 8.5
+        }
+      ],
+      "FALL": [
+        {
+          "id": 405,
+          "title": "BLOOD THE LAST VAMPIRE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/405-umT1upaBF6VG.jpg",
+          "color": "#6b281a",
+          "score": 6
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1999,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 44,
+          "title": "Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx44-MG5I672UbWAy.png",
+          "color": "#ffd6bb",
+          "score": 8
+        }
+      ],
+      "SPRING": [],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 979,
+          "title": "Street Fighter ZERO: THE ANIMATION",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx979-xmxAyIxWBSld.png",
+          "color": "#f15d0d",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1998,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 400,
+          "title": "Seihou Bukyou Outlaw Star",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx400-CJ2duQT3dCX1.png",
+          "color": "#e4d6ae",
+          "score": 8.5
+        },
+        {
+          "id": 437,
+          "title": "PERFECT BLUE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx437-69NMlXKFeuse.jpg",
+          "color": "#1a356b",
+          "score": 8.5
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 1,
+          "title": "Cowboy Bebop",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1-GCsPm7waJ4kS.png",
+          "color": "#f16b50",
+          "score": 9
+        },
+        {
+          "id": 6,
+          "title": "TRIGUN",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx6-wd4saT1JzStH.jpg",
+          "color": "#5086c9",
+          "score": 8
+        },
+        {
+          "id": 1027,
+          "title": "Psychic Force",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1027-XyTv5JfOxxKT.jpg",
+          "color": "#f17828",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 339,
+          "title": "serial experiments lain",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx339-xF2wp1NQuQ4r.png",
+          "color": "#e4a1d6",
+          "score": 8
+        },
+        {
+          "id": 219,
+          "title": "Kidou Senkan Nadesico: The prince of darkness",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx219-zuElTO2hrJEZ.jpg",
+          "color": "#3578a1",
+          "score": 7
+        },
+        {
+          "id": 528,
+          "title": "Pocket Monsters: Mewtwo no Gyakushuu",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx528-HIz7955MvEnN.jpg",
+          "color": "#e4ae0d",
+          "score": 7
+        },
+        {
+          "id": 420,
+          "title": "SPRIGGAN",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx420-KIPJO7uFQ9cR.jpg",
+          "color": "#bbd6f1",
+          "score": 7
+        },
+        {
+          "id": 2273,
+          "title": "Shin Kidou Senki Gundam Wing: Endless Waltz Tokubetsu-hen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2273-JhR0yaLDKEJp.png",
+          "color": "#e4e428",
+          "score": 10
+        }
+      ],
+      "FALL": [
+        {
+          "id": 782,
+          "title": "Gasaraki",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx782-2DNw8xRZb3RK.png",
+          "color": "#f15d43",
+          "score": 6
+        },
+        {
+          "id": 1022,
+          "title": "Generator Gawl",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1022-1GV26I8THCF0.jpg",
+          "color": "#e4865d",
+          "score": 6
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1997,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 31,
+          "title": "Shin Seiki Evangelion Movie: Shi to Shinsei",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx31-3zRThtzQH62E.png",
+          "color": "#e4785d",
+          "score": 8
+        }
+      ],
+      "SPRING": [],
+      "SUMMER": [
+        {
+          "id": 1101,
+          "title": "Tenchi Muyou! Manatsu no Eve",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1101.jpg",
+          "color": "#e4ae5d",
+          "score": 8
+        },
+        {
+          "id": 32,
+          "title": "Shin Seiki Evangelion Movie: Air / Magokoro wo, Kimi ni",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx32-5JYsv0wc122I.jpg",
+          "color": "#e46b50",
+          "score": 9
+        },
+        {
+          "id": 164,
+          "title": "Mononoke-hime",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx164-ySuGzCWVw2cL.jpg",
+          "color": "#333333",
+          "score": 8
+        }
+      ],
+      "FALL": [
+        {
+          "id": 33,
+          "title": "Kenpuu Denki Berserk",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx33-PSwfE5B0gejI.jpg",
+          "color": "#e49350",
+          "score": 9
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1996,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 81,
+          "title": "Kidou Senshi Gundam: Dai 08 MS Shotai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx81-qBgqd932d9lW.jpg",
+          "color": "#aed65d",
+          "score": 8
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 1006,
+          "title": "Tenchi Muyou! in Love",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/n1006-A3i2EkdddUYv.png",
+          "color": "#5093e4",
+          "score": 8
+        },
+        {
+          "id": 182,
+          "title": "Tenkuu no Escaflowne",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx182-YzZtZWMZCSFf.png",
+          "color": "#e41a5d",
+          "score": 8
+        },
+        {
+          "id": 493,
+          "title": "Armitage III: POLY-MATRIX",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/493.jpg",
+          "color": "#ffc900",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 155,
+          "title": "X",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx155-tDzea3RpxSZ8.jpg",
+          "color": "#ae4335",
+          "score": 8
+        }
+      ],
+      "FALL": [
+        {
+          "id": 218,
+          "title": "Kidou Senkan Nadesico",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx218-qBfbgiJIR5rv.jpg",
+          "color": "#f1781a",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1995,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 90,
+          "title": "Shin Kidou Senki Gundam Wing",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b90-umBjF3yaeIdo.png",
+          "color": "#f1935d",
+          "score": 10
+        },
+        {
+          "id": 905,
+          "title": "Dragon Ball Z: Fukkatsu no Fusion!! Goku to Vegeta",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/905-T97prwPOeyxm.jpg",
+          "color": "#e48650",
+          "score": 7
+        },
+        {
+          "id": 876,
+          "title": "Street Fighter II V",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/876.jpg",
+          "color": "#e4505d",
+          "score": 6
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 43,
+          "title": "GHOST IN THE SHELL: Koukaku Kidoutai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx43-Y6EjeEMM14dj.png",
+          "color": "#333333",
+          "score": 9
+        },
+        {
+          "id": 2522,
+          "title": "Rakushou! Hyper Doll",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/2522.jpg",
+          "color": "#fed60d",
+          "score": 7
+        },
+        {
+          "id": 268,
+          "title": "GOLDEN BOY: Sasurai no Obenkyou Yarou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx268-0T6bdW9CzVvz.png",
+          "color": "#333333",
+          "score": 8
+        },
+        {
+          "id": 30,
+          "title": "Shin Seiki Evangelion",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx30-AI1zr74Dh4ye.jpg",
+          "color": "#f17843",
+          "score": 9
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1994,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 426,
+          "title": "Final Fantasy",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx426-yzfMi37ChqJa.png",
+          "color": "#ffd600",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 474,
+          "title": "Macross Plus",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx474-lyjbbltW5ZX4.png",
+          "color": "#f14335",
+          "score": 7.5
+        },
+        {
+          "id": 432,
+          "title": "I Я I A ZЁIЯAM THE ANIMATION",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx432-zJOnlSMC93cO.png",
+          "color": "#333333",
+          "score": 7
+        },
+        {
+          "id": 504,
+          "title": "Garou Densetsu: THE MOTION PICTURE",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx504-0IjHPPUAONSf.jpg",
+          "color": "#e4935d",
+          "score": 6
+        },
+        {
+          "id": 1362,
+          "title": "Street Fighter II: The Movie",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1362-Z5U3WEbo0Q6H.jpg",
+          "color": "#e49343",
+          "score": 7.5
+        }
+      ],
+      "FALL": [
+        {
+          "id": 1168,
+          "title": "Musekinin Kanchou Tylor OVA",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1168-PIeqe2W74s7F.jpg",
+          "color": "#0d5086",
+          "score": 7.5
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1993,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 569,
+          "title": "Musekinin Kanchou Tylor",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx569-xlw4m3TkFBll.png",
+          "color": "#5dbbf1",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 617,
+          "title": "Juubee Ninpuuchou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx617-yo9IcTEQRNuN.jpg",
+          "color": "#785d28",
+          "score": 7
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 1344,
+          "title": "8 Man AFTER",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b1344-IyomWaPtcmbM.jpg",
+          "color": "#e4d650",
+          "score": 7
+        },
+        {
+          "id": 1800,
+          "title": "Battle Fighters Garou Densetsu 2",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1800-kHlddCIwoiX9.jpg",
+          "color": "#f1bb35",
+          "score": 6
+        },
+        {
+          "id": 1096,
+          "title": "Kidou Keisatsu Patlabor 2: the Movie",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1096-O4Nz0aBmMSxH.jpg",
+          "color": "#ae5d1a",
+          "score": 8
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1992,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 530,
+          "title": "Bishoujo Senshi Sailor Moon",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx530-O8q6KpJ244Qk.jpg",
+          "color": "#e48650",
+          "score": 8
+        },
+        {
+          "id": 1459,
+          "title": "Uchuu no Kishi Tekkaman Blade",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1459-LeqV4WNUfcNM.png",
+          "color": "#f1e4ae",
+          "score": 7
+        }
+      ],
+      "SPRING": [],
+      "SUMMER": [],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1991,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 88,
+          "title": "Kidou Senshi Gundam F91",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx88-A0p5JsI46tsX.png",
+          "color": "#e4a150",
+          "score": 6
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1990,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [],
+      "SUMMER": [
+        {
+          "id": 896,
+          "title": "Dragon Ball Z: Chikyuu Marugoto Chou Kessen",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/896.jpg",
+          "color": "#6b351a",
+          "score": 6
+        },
+        {
+          "id": 1352,
+          "title": "Cyber City OEDO 808",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1352-1Sytay3y8ZON.jpg",
+          "color": "#e4865d",
+          "score": 7
+        },
+        {
+          "id": 207,
+          "title": "Lodoss-tou Senki",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx207-B2lxEFGigYgd.png",
+          "color": "#e40d28",
+          "score": 8
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1989,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 813,
+          "title": "Dragon Ball Z",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx813-ZhnFNOeCU5dQ.png",
+          "color": "#e49343",
+          "score": 8
+        },
+        {
+          "id": 82,
+          "title": "Kidou Senshi Gundam 0080: Pocket no Naka no Sensou",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx82-aw5fvnBOYuNw.png",
+          "color": "#e4935d",
+          "score": 8
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 894,
+          "title": "Dragon Ball Z: Ora no Gohan wo Kaese!!",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/894-9eA7z7CyNMms.jpg",
+          "color": "#e4bb50",
+          "score": 7
+        },
+        {
+          "id": 512,
+          "title": "Majo no Takkyuubin",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx512-UwP8X4BR8YoM.png",
+          "color": "#50a1c9",
+          "score": 7.5
+        },
+        {
+          "id": 1095,
+          "title": "Kidou Keisatsu Patlabor: The Movie",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1095-uHF4BmIHLzbG.png",
+          "color": "#d6861a",
+          "score": 8
+        }
+      ],
+      "FALL": [
+        {
+          "id": 129591,
+          "title": "MEGAZONE23 III",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b129591-ofjJxkqwPJ3w.jpg",
+          "color": "#e4ae5d",
+          "score": 8
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1988,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 3014,
+          "title": "Ginga Eiyuu Densetsu: Waga Yuku wa Hoshi no Taikai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx3014-HcjYHAbi1bnd.jpg",
+          "color": "#e4a150",
+          "score": 7
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 87,
+          "title": "Kidou Senshi Gundam: Gyakushuu no Char",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx87-SCCIlaJZjSvz.png",
+          "color": "#e4ae43",
+          "score": 7
+        },
+        {
+          "id": 523,
+          "title": "Tonari no Totoro",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx523-fErBvxOHP7IX.jpg",
+          "color": "#f19335",
+          "score": 7
+        },
+        {
+          "id": 1288,
+          "title": "Kidou Keisatsu Patlabor",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1288-5XFOZjW78BbM.png",
+          "color": "#e48635",
+          "score": 7
+        },
+        {
+          "id": 937,
+          "title": "Appleseed",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx937-2SYiMKI3qPkp.jpg",
+          "color": "#e49350",
+          "score": 6
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 47,
+          "title": "AKIRA",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx47-4CR68arv452h.jpg",
+          "color": "#e45d50",
+          "score": 9
+        }
+      ],
+      "FALL": [
+        {
+          "id": 949,
+          "title": "Top wo Nerae! GunBuster",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx949-LDCFxDufSwTQ.png",
+          "color": "#e4bba1",
+          "score": 8
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1987,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [],
+      "SUMMER": [
+        {
+          "id": 1504,
+          "title": "Choujikuu Yousai Macross: FLASH BACK 2012",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1504-D0FjhoonS0Fk.jpg",
+          "color": "#e4d65d",
+          "score": 4
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1986,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 86,
+          "title": "Kidou Senshi Gundam ZZ",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b86-vaOa1TaV0T0K.png",
+          "color": "#e45043",
+          "score": 6
+        },
+        {
+          "id": 129595,
+          "title": "Megazone 23 PART II Himitsu Kudasai",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx129595-AuLhSlwfmL23.png",
+          "color": "#333333",
+          "score": 8
+        }
+      ],
+      "SUMMER": [
+        {
+          "id": 2265,
+          "title": "Transformers the Movie",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx2265-uGaMUjSpJVWa.png",
+          "color": "#d69350",
+          "score": 8
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1985,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 1935,
+          "title": "Megazone 23",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/nx1935-rEaYG766b8tp.jpg",
+          "color": "#f19350",
+          "score": 7.5
+        }
+      ],
+      "SPRING": [
+        {
+          "id": 85,
+          "title": "Kidou Senshi Z Gundam",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx85-zdvoyoXDpjSs.jpg",
+          "color": "#d6501a",
+          "score": 8
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 732,
+          "title": "Vampire Hunter D",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx732-dksIxsja9LX7.png",
+          "color": "#786b28",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1984,
+    "seasons": {
+      "WINTER": [
+        {
+          "id": 572,
+          "title": "Kaze no Tani no Nausicaä",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx572-ZE3kHBA6U0X1.jpg",
+          "color": "#e4785d",
+          "score": 8
+        }
+      ],
+      "SPRING": [],
+      "SUMMER": [
+        {
+          "id": 1089,
+          "title": "Choujikuu Yousai Macross: Ai Oboete Imasu ka",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/1089-uoP83D60OHxP.jpg",
+          "color": "#e45d86",
+          "score": 9
+        }
+      ],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1982,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [],
+      "SUMMER": [],
+      "FALL": [
+        {
+          "id": 1088,
+          "title": "Choujikuu Yousai Macross",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1088-b2eAPvA5zmmi.png",
+          "color": "#ffd61a",
+          "score": 7
+        }
+      ],
+      "UNKNOWN": []
+    }
+  },
+  {
+    "year": 1981,
+    "seasons": {
+      "WINTER": [],
+      "SPRING": [
+        {
+          "id": 1090,
+          "title": "Kidou Senshi Gundam I",
+          "cover": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/large/bx1090-EzpeffMoflBS.jpg",
+          "color": "#e49350",
+          "score": 6
+        }
+      ],
+      "SUMMER": [],
+      "FALL": [],
+      "UNKNOWN": []
+    }
+  }
+]

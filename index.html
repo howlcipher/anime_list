@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Anime Archive</title>
+    <!-- Modern/Retro fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header role="banner" class="retro-header">
+      <div class="header-container">
+        <h1 class="logo">Anime Archive</h1>
+        <div class="controls" role="group" aria-label="Display Controls">
+          <button id="themeToggle" aria-label="Toggle Dark/Light Theme">Theme</button>
+          <button id="colorBlindToggle" aria-label="Toggle Colorblind Mode">A11y Colors</button>
+        </div>
+      </div>
+      
+      <div class="search-bar" role="search">
+        <div class="input-group">
+          <label for="username1" class="sr-only">Username 1</label>
+          <input type="text" id="username1" placeholder="Username 1 (e.g. howlcipher)" aria-label="Primary AniList Username" />
+        </div>
+        <div class="input-group">
+          <label for="username2" class="sr-only">Username 2 (Optional)</label>
+          <input type="text" id="username2" placeholder="Username 2 (For compare)" aria-label="Secondary AniList Username to Compare" />
+        </div>
+        <button id="loadBtn" aria-label="Load User Data">Fetch Data</button>
+      </div>
+      <div class="links">
+        <a href="https://anilist.co" target="_blank" rel="noopener noreferrer" aria-label="Visit AniList website">Powered by AniList.co</a>
+      </div>
+    </header>
+
+    <main id="app" role="main" aria-live="polite">
+      <div id="loading" class="hidden" role="status" aria-label="Loading data">Loading data from AniList...</div>
+      <div id="error" class="hidden" role="alert"></div>
+      
+      <!-- Comparison Stats Area -->
+      <section id="compare-stats" class="hidden" aria-label="Comparison Statistics">
+      </section>
+
+      <!-- Main Content Area -->
+      <div id="archive-content" aria-label="Anime Archive Timeline"></div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

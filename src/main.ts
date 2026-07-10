@@ -22,7 +22,7 @@ const genreFilterSelect = document.getElementById('genreFilter') as HTMLSelectEl
 const yearFilterSelect = document.getElementById('yearFilter') as HTMLSelectElement;
 
 // State
-let isLight = false;
+let isLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
 let isColorBlind = false;
 let currentType: 'ANIME' | 'MANGA' = 'ANIME';
 let filterMasterpiece = false;
@@ -482,6 +482,14 @@ function showError(msg: string) {
 
 function hideError() {
   errorDiv.classList.add('hidden');
+}
+
+// Initialize Theme
+if (isLight) {
+  document.documentElement.setAttribute('data-theme', 'light');
+  themeToggle.textContent = '🌙 Dark Mode';
+} else {
+  themeToggle.textContent = '☀️ Light Mode';
 }
 
 themeToggle.addEventListener('click', () => {

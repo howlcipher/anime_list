@@ -66,7 +66,7 @@ function reRender() {
   if (!lastU1Data) return;
   const u2 = username2Input.value.trim();
   if (u2 && lastU2Data) {
-    renderCompareStats(lastU1Data.stats, lastU2Data.stats);
+    renderCompareStats(lastU1Data, lastU2Data);
     renderComparison(username1Input.value.trim(), u2, lastU1Data, lastU2Data);
   } else {
     renderStats(lastU1Data.stats);
@@ -376,20 +376,39 @@ function renderStats(stats: any) {
   `;
 }
 
-function renderCompareStats(s1: any, s2: any) {
+function renderCompareStats(u1Data: any, u2Data: any) {
+  const s1 = u1Data.stats;
+  const s2 = u2Data.stats;
+
+  const renderUserLabel = (data: any, val: string | number) => {
+    const avatar = data.userAvatar ? `<img src="${data.userAvatar}" alt="${data.userName}" style="width:24px; height:24px; border-radius:50%; object-fit: cover;">` : `<span>${data.userName}:</span>`;
+    return `<span style="display: flex; align-items: center; gap: 0.5rem; justify-content: center;">
+      ${avatar} <span style="max-width:90px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${val}">${val}</span>
+    </span>`;
+  };
+
   statsContainer.innerHTML = `
     <div class="stats-banner">
       <div class="stat-box">
         <span class="stat-label">${currentType === 'ANIME' ? 'COMPLETED' : 'READ'}</span>
-        <span class="stat-value compare">U1: ${s1.completed} | U2: ${s2.completed}</span>
+        <div class="stat-value compare" style="display: flex; gap: 1.5rem; align-items: center; justify-content: center; margin-top: 0.25rem;">
+          ${renderUserLabel(u1Data, s1.completed)}
+          ${renderUserLabel(u2Data, s2.completed)}
+        </div>
       </div>
       <div class="stat-box">
         <span class="stat-label">MEAN SCORE</span>
-        <span class="stat-value compare">U1: ${s1.meanScore} | U2: ${s2.meanScore}</span>
+        <div class="stat-value compare" style="display: flex; gap: 1.5rem; align-items: center; justify-content: center; margin-top: 0.25rem;">
+          ${renderUserLabel(u1Data, s1.meanScore)}
+          ${renderUserLabel(u2Data, s2.meanScore)}
+        </div>
       </div>
       <div class="stat-box">
         <span class="stat-label">TOP GENRE</span>
-        <span class="stat-value compare" style="font-size: 1rem;">U1: ${s1.topGenre} | U2: ${s2.topGenre}</span>
+        <div class="stat-value compare" style="display: flex; gap: 1.5rem; align-items: center; justify-content: center; margin-top: 0.25rem; font-size: 1.1rem;">
+          ${renderUserLabel(u1Data, s1.topGenre)}
+          ${renderUserLabel(u2Data, s2.topGenre)}
+        </div>
       </div>
     </div>
   `;
@@ -450,7 +469,7 @@ async function handleLoad() {
       populateFilters(u1Data, u2Data);
       advancedFilters.classList.remove('hidden');
 
-      renderCompareStats(u1Data.stats, u2Data.stats);
+      renderCompareStats(u1Data, u2Data);
       renderComparison(u1, u2, u1Data, u2Data);
     } else {
       if (u1Data.latestColor) {

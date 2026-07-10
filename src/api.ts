@@ -2,6 +2,10 @@ export const API_URL = 'https://graphql.anilist.co';
 
 const query = `
 query ($name: String, $type: MediaType, $page: Int) {
+  User(name: $name) {
+    name
+    avatar { large }
+  }
   Page(page: $page, perPage: 50) {
     pageInfo {
       hasNextPage
@@ -88,12 +92,16 @@ export interface ProcessedData {
   };
   uniqueGenres: string[];
   uniqueYears: number[];
+  userName: string;
+  userAvatar: string;
 }
 
 export async function fetchUserAnime(username: string, type: 'ANIME' | 'MANGA' = 'ANIME'): Promise<ProcessedData> {
   let hasNextPage = true;
   let page = 1;
   const allEntries = [];
+  let userAvatar = '';
+  let userName = username;
 
   while (hasNextPage) {
     const response = await fetch(API_URL, {
@@ -114,6 +122,11 @@ export async function fetchUserAnime(username: string, type: 'ANIME' | 'MANGA' =
       throw new Error(data.errors[0].message);
     }
 
+    if (page === 1 && data.data.User) {
+      userAvatar = data.data.User.avatar?.large || '';
+      userName = data.data.User.name || username;
+    }
+
     const pageInfo = data.data.Page.pageInfo;
     const mediaList = data.data.Page.mediaList;
     allEntries.push(...mediaList);
@@ -127,10 +140,10 @@ export async function fetchUserAnime(username: string, type: 'ANIME' | 'MANGA' =
     }
   }
 
-  return processEntries(allEntries);
+  return processEntries(allEntries, userAvatar, userName);
 }
 
-function processEntries(entries: any[]): ProcessedData {
+function processEntries(entries: any[], userAvatar: string, userName: string): ProcessedData {
   const grouped: Record<number, SeasonGroup> = {};
   const watching: AnimeEntry[] = [];
   const paused: AnimeEntry[] = [];
@@ -247,6 +260,8 @@ function processEntries(entries: any[]): ProcessedData {
       topStudio
     },
     uniqueGenres: Array.from(allGenres).sort(),
-    uniqueYears: Array.from(allYears).sort((a, b) => b - a)
+    uniqueYears: Array.from(allYears).sort((a, b) => b - a),
+    userName,
+    userAvatar
   };
 }

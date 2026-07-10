@@ -1,13 +1,13 @@
 export const API_URL = 'https://graphql.anilist.co';
 
 const query = `
-query ($name: String, $page: Int) {
+query ($name: String, $type: MediaType, $page: Int) {
   Page(page: $page, perPage: 50) {
     pageInfo {
       hasNextPage
       currentPage
     }
-    mediaList(userName: $name, type: ANIME, status_in: [COMPLETED, CURRENT, DROPPED, PAUSED]) {
+    mediaList(userName: $name, type: $type, status_in: [COMPLETED, CURRENT, DROPPED, PAUSED, PLANNING]) {
       status
       score
       completedAt { year month day }
@@ -28,6 +28,10 @@ query ($name: String, $page: Int) {
         startDate {
           year
           month
+        }
+        genres
+        studios(isMain: true) {
+          nodes { name }
         }
       }
     }
@@ -71,16 +75,19 @@ export interface ProcessedData {
   watching: AnimeEntry[];
   paused: AnimeEntry[];
   dropped: AnimeEntry[];
+  planning: AnimeEntry[];
   timeline: YearGroup[];
   latestColor: string | null;
   stats: {
     completed: number;
     watching: number;
     meanScore: string;
+    topGenre: string;
+    topStudio: string;
   };
 }
 
-export async function fetchUserAnime(username: string): Promise<ProcessedData> {
+export async function fetchUserAnime(username: string, type: 'ANIME' | 'MANGA' = 'ANIME'): Promise<ProcessedData> {
   let hasNextPage = true;
   let page = 1;
   const allEntries = [];
@@ -94,7 +101,7 @@ export async function fetchUserAnime(username: string): Promise<ProcessedData> {
       },
       body: JSON.stringify({
         query,
-        variables: { name: username, page }
+        variables: { name: username, type, page }
       })
     });
 
@@ -125,6 +132,7 @@ function processEntries(entries: any[]): ProcessedData {
   const watching: AnimeEntry[] = [];
   const paused: AnimeEntry[] = [];
   const dropped: AnimeEntry[] = [];
+  const planning: AnimeEntry[] = [];
   
   let latestDateValue = 0;
   let latestColor: string | null = null;
@@ -132,6 +140,9 @@ function processEntries(entries: any[]): ProcessedData {
   let completedCount = 0;
   let scoreSum = 0;
   let scoredCount = 0;
+
+  const genreCounts: Record<string, number> = {};
+  const studioCounts: Record<string, number> = {};
 
   for (const entry of entries) {
     const media = entry.media;
@@ -155,12 +166,21 @@ function processEntries(entries: any[]): ProcessedData {
       listStatus: listStatus
     };
 
+    if (media.genres) {
+      media.genres.forEach((g: string) => genreCounts[g] = (genreCounts[g] || 0) + 1);
+    }
+    if (media.studios && media.studios.nodes) {
+      media.studios.nodes.forEach((s: any) => studioCounts[s.name] = (studioCounts[s.name] || 0) + 1);
+    }
+
     if (listStatus === 'CURRENT') {
       watching.push(animeEntry);
     } else if (listStatus === 'PAUSED') {
       paused.push(animeEntry);
     } else if (listStatus === 'DROPPED') {
       dropped.push(animeEntry);
+    } else if (listStatus === 'PLANNING') {
+      planning.push(animeEntry);
     } else {
       completedCount++;
       if (entry.score > 0) {
@@ -198,17 +218,22 @@ function processEntries(entries: any[]): ProcessedData {
   }
 
   const meanScore = scoredCount > 0 ? (scoreSum / scoredCount).toFixed(1) : '0';
+  const topGenre = Object.entries(genreCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'N/A';
+  const topStudio = Object.entries(studioCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'N/A';
 
   return {
     watching,
     paused,
     dropped,
+    planning,
     timeline: result,
     latestColor,
     stats: {
       completed: completedCount,
       watching: watching.length,
-      meanScore
+      meanScore,
+      topGenre,
+      topStudio
     }
   };
 }

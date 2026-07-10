@@ -14,8 +14,8 @@
   --border-color: color-mix(in srgb, var(--primary-color) 30%, #44475a);
   
   --text-color: #e0e0e0;
-  --font-main: 'Space Grotesk', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-main: 'M PLUS Rounded 1c', sans-serif;
+  --font-mono: 'Nunito', sans-serif;
   --focus-ring: var(--primary-color);
 }
 
@@ -151,6 +151,35 @@ button:focus, input:focus, a:focus {
 
 .search-bar button:hover {
   filter: brightness(1.1);
+}
+
+.filter-bar button {
+  background: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-main);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.filter-bar button:hover {
+  background: var(--primary-color);
+  color: var(--base-bg-dark);
+}
+
+.filter-bar button.active {
+  background: var(--primary-color);
+  color: var(--base-bg-dark);
+}
+
+[data-theme="light"] .filter-bar button:hover,
+[data-theme="light"] .filter-bar button.active {
+  color: #fff;
 }
 
 #quick-nav {

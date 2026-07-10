@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retro Anime Archive</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- Modern/Retro fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Modern/Anime fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=M+PLUS+Rounded+1c:wght@500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header role="banner" class="retro-header">
@@ -29,11 +29,18 @@
         </div>
         <button id="loadBtn" aria-label="Load User Data">Fetch Data</button>
       </div>
+      
+      <div class="filter-bar" style="display: flex; gap: 1rem; margin-top: 1rem; justify-content: center;">
+        <button id="typeToggle" aria-label="Toggle Anime/Manga">Mode: ANIME</button>
+        <button id="masterpieceToggle" aria-label="Toggle Masterpiece Filter">★ Masterpieces Only</button>
+      </div>
+
       <nav id="quick-nav" class="hidden" aria-label="Section Navigation">
-        <a href="#section-watching">Watching</a>
+        <a href="#section-watching" id="nav-watching-text">Watching</a>
+        <a href="#section-planning" id="nav-planning-text">Plan to Watch</a>
         <a href="#section-paused">On Hold</a>
         <a href="#section-dropped">Dropped</a>
-        <a href="#section-completed">Completed</a>
+        <a href="#section-completed" id="nav-completed-text">Completed</a>
       </nav>
       <div class="links">
         <a href="https://github.com/howlcipher/anime_list" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">Source Code</a> | 

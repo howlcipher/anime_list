@@ -33,6 +33,11 @@
   --text-color: #18181b;
 }
 
+[data-theme="light"] .anime-card:hover .card-title {
+  color: #000;
+  text-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
+}
+
 [data-colorblind="true"] {
   /* High contrast colors and patterns for colorblindness */
   --primary-color: #000000 !important;
@@ -374,8 +379,8 @@ button:focus, input:focus, a:focus {
 }
 
 .anime-card:hover .card-title {
-  /* Mix with text-color to ensure legibility on dark/light backgrounds */
-  color: color-mix(in srgb, var(--card-color, var(--primary-color)) 75%, var(--text-color));
+  color: #fff;
+  text-shadow: 1px 1px 3px #000, -1px -1px 3px #000;
 }
 
 .card-score {

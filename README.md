@@ -1,9 +1,9 @@
-# Retro Anime Archive
+# Otaku Timeline
 
 <div align="center">
-  <img src="https://img.shields.io/github/license/howlcipher/anime_list?style=flat-square&color=ff5555" alt="License" />
-  <img src="https://img.shields.io/github/stars/howlcipher/anime_list?style=flat-square&color=50fa7b" alt="Stars" />
-  <img src="https://img.shields.io/github/issues/howlcipher/anime_list?style=flat-square&color=bd93f9" alt="Issues" />
+  <img src="https://img.shields.io/github/license/howlcipher/Otaku-Timeline?style=flat-square&color=ff5555" alt="License" />
+  <img src="https://img.shields.io/github/stars/howlcipher/Otaku-Timeline?style=flat-square&color=50fa7b" alt="Stars" />
+  <img src="https://img.shields.io/github/issues/howlcipher/Otaku-Timeline?style=flat-square&color=bd93f9" alt="Issues" />
 </div>
 <br />
 <div align="center">
@@ -13,7 +13,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" height="40" alt="Vite" title="Vite" />
 </div>
 
-A sleek, retro-minimalist web application for viewing and comparing AniList profiles. 
+A sleek, modern web application for viewing and comparing AniList anime and manga profiles. 
 
 ## Features
 
@@ -40,8 +40,8 @@ A sleek, retro-minimalist web application for viewing and comparing AniList prof
 
 1. Clone the repository:
    ```bash
-   git clone git@github.com:howlcipher/anime_list.git
-   cd anime_list
+   git clone git@github.com:howlcipher/Otaku-Timeline.git
+   cd Otaku-Timeline
    ```
 2. Install dependencies:
    ```bash

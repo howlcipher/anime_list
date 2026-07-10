@@ -59,7 +59,7 @@ function updateNavText() {
   if (tComp) tComp.textContent = currentType === 'ANIME' ? 'Completed' : 'Read';
 }
 
-function renderCard(entry: AnimeEntry, showScore: boolean = true) {
+function renderCard(entry: AnimeEntry, showScore: boolean = true, index: number = 0) {
   let extraHtml = '';
 
   if (entry.listStatus === 'PLANNING') {
@@ -76,7 +76,7 @@ function renderCard(entry: AnimeEntry, showScore: boolean = true) {
   }
 
   return `
-    <article class="anime-card" style="--card-color: ${entry.color}">
+    <article class="anime-card" style="--card-color: ${entry.color}; animation-delay: ${index * 0.05}s">
       <div class="cover-wrapper">
         <img src="${entry.cover}" alt="${entry.title} cover art" loading="lazy" />
       </div>
@@ -105,7 +105,7 @@ function renderTimeline(data: any, container: HTMLElement) {
       <section id="section-watching" class="year-section">
         <h2 class="year-title">Currently ${currentType === 'ANIME' ? 'Watching' : 'Reading'}</h2>
         <div class="card-grid" style="margin-bottom: 2rem;">
-          ${watching.map((e: AnimeEntry) => renderCard(e)).join('')}
+          ${watching.map((e: AnimeEntry, i: number) => renderCard(e, true, i)).join('')}
         </div>
       </section>
     `;
@@ -117,7 +117,7 @@ function renderTimeline(data: any, container: HTMLElement) {
       <section id="section-planning" class="year-section">
         <h2 class="year-title">Plan to ${currentType === 'ANIME' ? 'Watch' : 'Read'}</h2>
         <div class="card-grid" style="margin-bottom: 2rem;">
-          ${planning.map((e: AnimeEntry) => renderCard(e)).join('')}
+          ${planning.map((e: AnimeEntry, i: number) => renderCard(e, true, i)).join('')}
         </div>
       </section>
     `;
@@ -129,7 +129,7 @@ function renderTimeline(data: any, container: HTMLElement) {
       <section id="section-paused" class="year-section">
         <h2 class="year-title">On Hold</h2>
         <div class="card-grid" style="margin-bottom: 2rem;">
-          ${paused.map((e: AnimeEntry) => renderCard(e)).join('')}
+          ${paused.map((e: AnimeEntry, i: number) => renderCard(e, true, i)).join('')}
         </div>
       </section>
     `;
@@ -141,7 +141,7 @@ function renderTimeline(data: any, container: HTMLElement) {
       <section id="section-dropped" class="year-section">
         <h2 class="year-title">Dropped</h2>
         <div class="card-grid" style="margin-bottom: 2rem;">
-          ${dropped.map((e: AnimeEntry) => renderCard(e)).join('')}
+          ${dropped.map((e: AnimeEntry, i: number) => renderCard(e, true, i)).join('')}
         </div>
       </section>
     `;
@@ -165,7 +165,7 @@ function renderTimeline(data: any, container: HTMLElement) {
           <div class="season-section">
             <h3 class="season-title">${season}</h3>
             <div class="card-grid">
-              ${entries.map((e: AnimeEntry) => renderCard(e)).join('')}
+              ${entries.map((e: AnimeEntry, i: number) => renderCard(e, true, i)).join('')}
             </div>
           </div>
         `;
@@ -272,7 +272,7 @@ function renderComparison(u1: string, u2: string, u1Data: any, u2Data: any) {
   
   if (fMatches.length > 0) {
     html += `<h2 class="compare-title">Shared</h2><div class="card-grid">`;
-    fMatches.forEach(({ e1, e2 }) => {
+    fMatches.forEach(({ e1, e2 }, i) => {
       let scoreHtml = '';
       if (e1.score > 0 || e2.score > 0) {
         scoreHtml = `
@@ -284,7 +284,7 @@ function renderComparison(u1: string, u2: string, u1Data: any, u2Data: any) {
       }
       
       html += `
-        <article class="anime-card compare" style="--card-color: ${e1.color}">
+        <article class="anime-card compare" style="--card-color: ${e1.color}; animation-delay: ${i * 0.05}s">
           <div class="cover-wrapper">
             <img src="${e1.cover}" alt="${e1.title} cover" loading="lazy" />
           </div>
@@ -300,21 +300,21 @@ function renderComparison(u1: string, u2: string, u1Data: any, u2Data: any) {
 
   if (fPlan.length > 0) {
     html += `<h2 class="compare-title" style="margin-top: 3rem;">Both Plan to ${currentType === 'ANIME' ? 'Watch' : 'Read'}</h2><div class="card-grid">`;
-    fPlan.forEach(({ e1 }) => {
-      html += renderCard(e1, false);
+    fPlan.forEach(({ e1 }, i) => {
+      html += renderCard(e1, false, i);
     });
     html += `</div>`;
   }
 
   if (fOnlyU1.length > 0) {
     html += `<h2 class="compare-title" style="margin-top: 3rem;">Only ${u1}</h2><div class="card-grid">`;
-    fOnlyU1.forEach(e => html += renderCard(e));
+    fOnlyU1.forEach((e, i) => html += renderCard(e, true, i));
     html += `</div>`;
   }
   
   if (fOnlyU2.length > 0) {
     html += `<h2 class="compare-title" style="margin-top: 3rem;">Only ${u2}</h2><div class="card-grid">`;
-    fOnlyU2.forEach(e => html += renderCard(e));
+    fOnlyU2.forEach((e, i) => html += renderCard(e, true, i));
     html += `</div>`;
   }
 
@@ -371,6 +371,9 @@ function renderCompareStats(s1: any, s2: any) {
 async function handleLoad() {
   const u1 = username1Input.value.trim() || 'howlcipher';
   const u2 = username2Input.value.trim();
+
+  localStorage.setItem('otakuTimeline_u1', u1);
+  localStorage.setItem('otakuTimeline_u2', u2);
 
   hideError();
   loadingDiv.classList.remove('hidden');
@@ -459,5 +462,11 @@ function handleEnter(e: KeyboardEvent) {
 
 username1Input.addEventListener('keydown', handleEnter);
 username2Input.addEventListener('keydown', handleEnter);
+
+// Load saved users
+const savedU1 = localStorage.getItem('otakuTimeline_u1');
+const savedU2 = localStorage.getItem('otakuTimeline_u2');
+if (savedU1) username1Input.value = savedU1;
+if (savedU2) username2Input.value = savedU2;
 
 handleLoad();

@@ -41,9 +41,13 @@
           <label for="username1" class="sr-only">Username 1</label>
           <input type="text" id="username1" placeholder="Username 1 (e.g. howlcipher)" aria-label="Primary AniList Username" />
         </div>
-        <div class="input-group">
-          <label for="username2" class="sr-only">Username 2 (Optional)</label>
-          <input type="text" id="username2" placeholder="Username 2 (For compare)" aria-label="Secondary AniList Username to Compare" />
+        
+        <button id="addCompareBtn" aria-label="Compare with friend" title="Compare with a friend" style="background: var(--bg-color); color: var(--text-color); border: 2px solid var(--border-color); font-weight: bold; border-radius: 4px; cursor: pointer; padding: 0.5rem 1rem;">+ Compare</button>
+
+        <div class="input-group" id="username2Container" style="display: none; align-items: center; gap: 0.5rem;">
+          <label for="username2" class="sr-only">Username 2</label>
+          <input type="text" id="username2" placeholder="Friend's Username" aria-label="Secondary AniList Username to Compare" />
+          <button id="removeCompareBtn" aria-label="Cancel comparison" title="Cancel comparison" style="background: var(--bg-color); color: #ff5555; border: 2px solid var(--border-color); font-weight: bold; border-radius: 4px; cursor: pointer; padding: 0.5rem 0.75rem;">✕</button>
         </div>
         <button id="loadBtn" aria-label="Load User Data">Fetch Data</button>
       </div>

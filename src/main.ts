@@ -5,6 +5,9 @@ const themeToggle = document.getElementById('themeToggle') as HTMLButtonElement;
 const colorBlindToggle = document.getElementById('colorBlindToggle') as HTMLButtonElement;
 const username1Input = document.getElementById('username1') as HTMLInputElement;
 const username2Input = document.getElementById('username2') as HTMLInputElement;
+const addCompareBtn = document.getElementById('addCompareBtn') as HTMLButtonElement;
+const removeCompareBtn = document.getElementById('removeCompareBtn') as HTMLButtonElement;
+const username2Container = document.getElementById('username2Container') as HTMLDivElement;
 const loadBtn = document.getElementById('loadBtn') as HTMLButtonElement;
 const loadingDiv = document.getElementById('loading') as HTMLDivElement;
 const errorDiv = document.getElementById('error') as HTMLDivElement;
@@ -23,6 +26,7 @@ const yearFilterSelect = document.getElementById('yearFilter') as HTMLSelectElem
 
 // State
 let isLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+let isComparing = false;
 let isColorBlind = false;
 let currentType: 'ANIME' | 'MANGA' = 'ANIME';
 let filterMasterpiece = false;
@@ -64,7 +68,7 @@ yearFilterSelect.addEventListener('change', () => {
 
 function reRender() {
   if (!lastU1Data) return;
-  const u2 = username2Input.value.trim();
+  const u2 = isComparing ? username2Input.value.trim() : '';
   if (u2 && lastU2Data) {
     renderCompareStats(lastU1Data, lastU2Data);
     renderComparison(username1Input.value.trim(), u2, lastU1Data, lastU2Data);
@@ -437,10 +441,14 @@ function populateFilters(u1Data: any, u2Data: any) {
 
 async function handleLoad() {
   const u1 = username1Input.value.trim() || 'howlcipher';
-  const u2 = username2Input.value.trim();
+  const u2 = isComparing ? username2Input.value.trim() : '';
 
   localStorage.setItem('otakuTimeline_u1', u1);
-  localStorage.setItem('otakuTimeline_u2', u2);
+  if (isComparing && u2) {
+    localStorage.setItem('otakuTimeline_u2', u2);
+  } else {
+    localStorage.removeItem('otakuTimeline_u2');
+  }
 
   hideError();
   loadingDiv.classList.remove('hidden');
@@ -533,6 +541,21 @@ colorBlindToggle.addEventListener('click', () => {
   }
 });
 
+addCompareBtn.addEventListener('click', () => {
+  isComparing = true;
+  addCompareBtn.style.display = 'none';
+  username2Container.style.display = 'flex';
+  username2Input.focus();
+});
+
+removeCompareBtn.addEventListener('click', () => {
+  isComparing = false;
+  username2Input.value = '';
+  username2Container.style.display = 'none';
+  addCompareBtn.style.display = 'inline-block';
+  handleLoad();
+});
+
 loadBtn.addEventListener('click', handleLoad);
 
 function handleEnter(e: KeyboardEvent) {
@@ -548,6 +571,11 @@ username2Input.addEventListener('keydown', handleEnter);
 const savedU1 = localStorage.getItem('otakuTimeline_u1');
 const savedU2 = localStorage.getItem('otakuTimeline_u2');
 if (savedU1) username1Input.value = savedU1;
-if (savedU2) username2Input.value = savedU2;
+if (savedU2) {
+  username2Input.value = savedU2;
+  isComparing = true;
+  addCompareBtn.style.display = 'none';
+  username2Container.style.display = 'flex';
+}
 
 handleLoad();

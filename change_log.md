@@ -7,6 +7,7 @@ All notable changes to this project will be documented in this file.
 - **PWA Support:** Progressive Web App implementation with `manifest.json` and a service worker for offline caching and home-screen installation.
 - **Export as Image:** "Export Stats" button using `html2canvas` to easily save and share your statistics banner as a `.png`.
 - **Shareable URLs:** The URL automatically updates with query parameters (`?u1=...&u2=...&type=...`) so you can instantly share your exact timeline comparison with friends.
+- **Smart Memory:** The app now remembers your most recently searched usernames via LocalStorage, automatically populating the fields on your next visit.
 - **Premium UI Enhancements:** 
   - Glassmorphism effects applied to the retro sticky header.
   - Scroll-reveal `IntersectionObserver` micro-animations for cards and banners.

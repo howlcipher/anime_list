@@ -17,6 +17,7 @@ It is designed to be the ultimate companion app for AniList users, rendering you
 ### ✨ Features
 
 * **⚡ Zero Login Required:** Just type in any AniList username and hit enter. Instantly view their entire public profile.
+* **🧠 Smart Memory:** The app automatically saves the last username you searched (and your comparison friend) via LocalStorage, so you don't have to re-type it next time you visit.
 * **👯 Friend Comparison Mode:** Type a second username to instantly generate a side-by-side comparison. See what shows you both share, what you both plan to watch, and who is scoring things higher.
 * **🎨 Dynamic "Chameleon" Theming:** The entire UI (backgrounds, buttons, scrollbars, text-shadows) dynamically extracts and tints itself to match the official accent color of your most recently completed anime or manga.
 * **📚 Anime & Manga Modes:** Seamlessly toggle between your Anime Watchlist and your Manga Reading list with a single click.

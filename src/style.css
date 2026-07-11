@@ -143,6 +143,15 @@ button:focus, input:focus, a:focus {
   color: var(--bg-color);
 }
 
+.header-content-wrapper {
+  display: none;
+  flex-direction: column;
+}
+
+.header-content-wrapper.open {
+  display: flex;
+}
+
 .controls button {
   background: transparent;
   border: 2px solid var(--text-color);
@@ -588,20 +597,7 @@ button:focus, input:focus, a:focus {
   #app {
     padding: 1rem;
   }
-  
-  .mobile-menu-toggle {
-    display: block !important;
-  }
 
-  .header-content-wrapper {
-    display: none;
-    flex-direction: column;
-  }
-
-  .header-content-wrapper.open {
-    display: flex;
-  }
-  
   .controls {
     justify-content: center !important;
     width: 100%;

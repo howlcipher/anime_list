@@ -261,6 +261,7 @@ export function processEntries(entries: any[], userAvatar: string, userName: str
     });
   }
 
+  const meanScore = scoredCount > 0 ? (scoreSum / scoredCount).toFixed(1) : '0';
   const sortedGenres = Object.entries(genreCounts).sort((a, b) => b[1] - a[1]);
   const topGenre = sortedGenres[0]?.[0] || 'N/A';
   const top5Genres = sortedGenres.slice(0, 5).map(g => ({ name: g[0], count: g[1] }));

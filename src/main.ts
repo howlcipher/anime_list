@@ -11,8 +11,8 @@ const addCompareBtn = document.getElementById('addCompareBtn') as HTMLButtonElem
 const removeCompareBtn = document.getElementById('removeCompareBtn') as HTMLButtonElement;
 const username2Container = document.getElementById('username2Container') as HTMLDivElement;
 const loadBtn = document.getElementById('loadBtn') as HTMLButtonElement;
-const loadingDiv = document.getElementById('loading') as HTMLDivElement;
-const errorDiv = document.getElementById('error') as HTMLDivElement;
+const skeletonContainer = document.getElementById('skeleton-container') as HTMLDivElement;
+const toastContainer = document.getElementById('toast-container') as HTMLDivElement;
 const archiveContent = document.getElementById('archive-content') as HTMLDivElement;
 const compareStats = document.getElementById('compare-stats') as HTMLElement;
 const statsContainer = document.getElementById('stats-container') as HTMLElement;
@@ -75,9 +75,30 @@ function reRender() {
     renderCompareStats(lastU1Data, lastU2Data);
     renderComparison(username1Input.value.trim(), u2, lastU1Data, lastU2Data);
   } else {
-    renderStats(lastU1Data.stats);
+    renderStats(lastU1Data);
     renderTimeline(lastU1Data, archiveContent);
   }
+}
+
+// Intersection Observer for Scroll Reveal
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+function observeReveals() {
+  const reveals = document.querySelectorAll('.scroll-reveal');
+  reveals.forEach(el => observer.observe(el));
 }
 
 function updateNavText() {
@@ -106,7 +127,7 @@ function renderCard(entry: AnimeEntry, showScore: boolean = true, index: number 
   }
 
   return `
-    <article class="anime-card" style="--card-color: ${entry.color}; animation-delay: ${index * 0.05}s">
+    <article class="anime-card scroll-reveal" style="--card-color: ${entry.color}; animation-delay: ${index * 0.05}s">
       <div class="cover-wrapper">
         <img src="${entry.cover}" alt="${entry.title} cover art" loading="lazy" />
       </div>
@@ -214,6 +235,7 @@ function renderTimeline(data: any, container: HTMLElement) {
   }
 
   container.innerHTML = html;
+  observeReveals();
 }
 
 function renderComparison(u1: string, u2: string, u1Data: any, u2Data: any) {
@@ -362,24 +384,52 @@ function renderComparison(u1: string, u2: string, u1Data: any, u2Data: any) {
   }
 
   if (fOnlyU1.length > 0) {
-    html += `<h2 class="compare-title" style="margin-top: 3rem;">Only ${u1}</h2><div class="card-grid">`;
+    html += `<h2 class="compare-title scroll-reveal" style="margin-top: 3rem;">Only ${u1}</h2><div class="card-grid">`;
     fOnlyU1.forEach((e, i) => html += renderCard(e, true, i));
     html += `</div>`;
   }
   
   if (fOnlyU2.length > 0) {
-    html += `<h2 class="compare-title" style="margin-top: 3rem;">Only ${u2}</h2><div class="card-grid">`;
+    html += `<h2 class="compare-title scroll-reveal" style="margin-top: 3rem;">Only ${u2}</h2><div class="card-grid">`;
     fOnlyU2.forEach((e, i) => html += renderCard(e, true, i));
     html += `</div>`;
   }
 
   compareStats.innerHTML = html;
   compareStats.classList.remove('hidden');
+  observeReveals();
 }
 
-function renderStats(stats: any) {
+const GENRE_COLORS = [
+  '#ff5555', '#50fa7b', '#8be9fd', '#bd93f9', '#f1fa8c', '#ffb86c', '#ff79c6'
+];
+
+function renderStats(userData: any) {
+  const stats = userData.stats;
+  const topGenres = stats.top5Genres || [];
+  
+  let visualizerHtml = '';
+  let legendHtml = '';
+  
+  if (topGenres.length > 0) {
+    const totalTop = topGenres.reduce((acc: number, g: any) => acc + g.count, 0);
+    
+    visualizerHtml = `<div class="genre-visualizer scroll-reveal">`;
+    legendHtml = `<div class="genre-legend scroll-reveal">`;
+    
+    topGenres.forEach((g: any, i: number) => {
+      const color = GENRE_COLORS[i % GENRE_COLORS.length];
+      const pct = (g.count / totalTop) * 100;
+      visualizerHtml += `<div class="genre-bar" style="width: ${pct}%; background-color: ${color};" title="${g.name}: ${g.count}"></div>`;
+      legendHtml += `<div class="legend-item"><div class="legend-color" style="background-color: ${color};"></div><span>${g.name}</span></div>`;
+    });
+    
+    visualizerHtml += `</div>`;
+    legendHtml += `</div>`;
+  }
+
   statsContainer.innerHTML = `
-    <div class="stats-banner">
+    <div class="stats-banner scroll-reveal">
       <div class="stat-box">
         <span class="stat-label">${currentType === 'ANIME' ? 'COMPLETED' : 'READ'}</span>
         <span class="stat-value">${stats.completed}</span>
@@ -392,16 +442,14 @@ function renderStats(stats: any) {
         <span class="stat-label">MEAN SCORE</span>
         <span class="stat-value">${stats.meanScore}</span>
       </div>
-      <div class="stat-box">
-        <span class="stat-label">TOP GENRE</span>
-        <span class="stat-value" style="font-size: 1.5rem;">${stats.topGenre}</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-label">${currentType === 'ANIME' ? 'TOP STUDIO' : 'TOP GENRE 2'}</span>
-        <span class="stat-value" style="font-size: 1.2rem;">${stats.topStudio}</span>
+      <div class="stat-box" style="flex: 2;">
+        <span class="stat-label">TOP GENRES</span>
+        ${visualizerHtml}
+        ${legendHtml}
       </div>
     </div>
   `;
+  observeReveals();
 }
 
 function renderCompareStats(u1Data: any, u2Data: any) {
@@ -463,6 +511,25 @@ function populateFilters(u1Data: any, u2Data: any) {
   yearFilterSelect.value = filterYear;
 }
 
+function showSkeleton() {
+  let skeletons = '';
+  for (let i = 0; i < 12; i++) {
+    skeletons += `
+      <div class="skeleton-card">
+        <div class="skeleton-cover"></div>
+        <div class="skeleton-text"></div>
+        <div class="skeleton-text" style="width: 60%;"></div>
+      </div>
+    `;
+  }
+  skeletonContainer.innerHTML = `<div class="card-grid">${skeletons}</div>`;
+  skeletonContainer.classList.remove('hidden');
+}
+
+function hideSkeleton() {
+  skeletonContainer.classList.add('hidden');
+}
+
 async function handleLoad() {
   const u1 = username1Input.value.trim() || 'howlcipher';
   const u2 = isComparing ? username2Input.value.trim() : '';
@@ -474,8 +541,7 @@ async function handleLoad() {
     localStorage.removeItem('otakuTimeline_u2');
   }
 
-  hideError();
-  loadingDiv.classList.remove('hidden');
+  showSkeleton();
   quickNav.classList.add('hidden');
   archiveContent.innerHTML = '';
   compareStats.innerHTML = '';
@@ -512,7 +578,7 @@ async function handleLoad() {
       populateFilters(u1Data, null);
       advancedFilters.classList.remove('hidden');
 
-      renderStats(u1Data.stats);
+      renderStats(u1Data);
       renderTimeline(u1Data, archiveContent);
     }
     
@@ -520,19 +586,37 @@ async function handleLoad() {
       quickNav.classList.remove('hidden');
     }
   } catch (err: any) {
-    showError(err.message || 'Failed to fetch data.');
+    showToast(err.message || 'Failed to fetch data.', 'error');
   } finally {
-    loadingDiv.classList.add('hidden');
+    hideSkeleton();
   }
 }
 
-function showError(msg: string) {
-  errorDiv.textContent = msg;
-  errorDiv.classList.remove('hidden');
-}
-
-function hideError() {
-  errorDiv.classList.add('hidden');
+function showToast(msg: string, type: 'error' | 'success' | 'info' = 'info') {
+  const toast = document.createElement('div');
+  toast.className = 'toast';
+  
+  if (type === 'error') {
+    toast.style.borderLeftColor = '#ff5555';
+    toast.style.color = '#ff5555';
+  } else if (type === 'success') {
+    toast.style.borderLeftColor = '#50fa7b';
+    toast.style.color = '#50fa7b';
+  }
+  
+  toast.textContent = msg;
+  toastContainer.appendChild(toast);
+  
+  // Trigger reflow for animation
+  void toast.offsetWidth;
+  toast.classList.add('show');
+  
+  setTimeout(() => {
+    toast.classList.remove('show');
+    setTimeout(() => {
+      toast.remove();
+    }, 300);
+  }, 3000);
 }
 
 // Initialize Theme

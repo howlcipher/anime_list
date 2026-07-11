@@ -85,8 +85,9 @@
     </header>
 
     <main id="app" role="main" aria-live="polite">
-      <div id="loading" class="hidden" role="status" aria-label="Loading data">Loading data from AniList...</div>
-      <div id="error" class="hidden" role="alert"></div>
+      <div id="skeleton-container" class="hidden" role="status" aria-label="Loading data">
+        <!-- Skeleton cards will be injected here by JS -->
+      </div>
       
       <!-- Stats Banner -->
       <section id="stats-container" aria-label="User Statistics"></section>
@@ -98,6 +99,8 @@
       <!-- Main Content Area -->
       <div id="archive-content" aria-label="Anime Archive Timeline"></div>
     </main>
+
+    <div id="toast-container" aria-live="assertive"></div>
 
     <script type="module" src="/src/main.ts"></script>
   </body>

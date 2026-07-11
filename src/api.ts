@@ -107,6 +107,7 @@ export interface ProcessedData {
     meanScore: string;
     topGenre: string;
     topStudio: string;
+    top5Genres: { name: string, count: number }[];
   };
   uniqueGenres: string[];
   uniqueYears: number[];
@@ -260,8 +261,9 @@ export function processEntries(entries: any[], userAvatar: string, userName: str
     });
   }
 
-  const meanScore = scoredCount > 0 ? (scoreSum / scoredCount).toFixed(1) : '0';
-  const topGenre = Object.entries(genreCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'N/A';
+  const sortedGenres = Object.entries(genreCounts).sort((a, b) => b[1] - a[1]);
+  const topGenre = sortedGenres[0]?.[0] || 'N/A';
+  const top5Genres = sortedGenres.slice(0, 5).map(g => ({ name: g[0], count: g[1] }));
   const topStudio = Object.entries(studioCounts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'N/A';
 
   return {
@@ -276,7 +278,8 @@ export function processEntries(entries: any[], userAvatar: string, userName: str
       watching: watching.length,
       meanScore,
       topGenre,
-      topStudio
+      topStudio,
+      top5Genres
     },
     uniqueGenres: Array.from(allGenres).sort(),
     uniqueYears: Array.from(allYears).sort((a, b) => b - a),

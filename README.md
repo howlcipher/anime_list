@@ -1,12 +1,16 @@
 # Otaku Timeline 🎌
 
+![GitHub last commit](https://img.shields.io/github/last-commit/howlcipher/Otaku-Timeline?style=for-the-badge&color=ff5555)
+![GitHub pages](https://img.shields.io/github/actions/workflow/status/howlcipher/Otaku-Timeline/update.yml?branch=main&label=Pages&style=for-the-badge&color=50fa7b)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&color=8be9fd)
+
 ![Otaku Timeline Demo](https://howlcipher.github.io/Otaku-Timeline/og-image.jpg)
 
 **Otaku Timeline** is a blazing-fast, visually striking, zero-login required application that fetches and visualizes AniList Anime and Manga libraries.
 
 It is designed to be the ultimate companion app for AniList users, rendering your entire watch/read history into a beautiful, chronological pop-art timeline. The app dynamically color-tints itself based on your most recently completed shows, bringing your profile to life.
 
-👉 **[Live Demo](https://howlcipher.github.io/Otaku-Timeline/)**
+👉 **[Live Demo](https://howlcipher.github.io/Otaku-Timeline/)** | 📄 **[View Changelog](./change_log.md)**
 
 ---
 
@@ -28,10 +32,10 @@ It is designed to be the ultimate companion app for AniList users, rendering you
 
 ### 🛠️ Built With
 
-* **Vanilla HTML, CSS, TypeScript** — No heavy UI frameworks. Extremely lightweight.
-* **Vite** — Lightning fast build tooling.
-* **AniList GraphQL API** — Direct queries to the `graphql.anilist.co` endpoint.
-* **GitHub Pages** — Automatically deployed via GitHub Actions on every push.
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="20" alt="HTML5" title="HTML5" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="20" alt="CSS3" title="CSS3" /> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="20" alt="TypeScript" title="TypeScript" /> **Vanilla HTML, CSS, TypeScript** — No heavy UI frameworks. Extremely lightweight.
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" height="20" alt="Vite" title="Vite" /> **Vite** — Lightning fast build tooling.
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" height="20" alt="GraphQL" title="GraphQL" /> **AniList GraphQL API** — Direct queries to the `graphql.anilist.co` endpoint.
+* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="20" alt="GitHub Pages" title="GitHub Pages" /> **GitHub Pages** — Automatically deployed via GitHub Actions on every push.
 
 ---
 

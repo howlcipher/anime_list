@@ -1,0 +1,17 @@
+{
+  "name": "Otaku Timeline",
+  "short_name": "OtakuTimeline",
+  "description": "Visualize your AniList anime and manga history.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#ff5555",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

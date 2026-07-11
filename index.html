@@ -23,8 +23,12 @@
     <meta property="twitter:description" content="A blazing fast, beautifully dynamic visualizer for AniList anime and manga timelines. Instantly compare your lists with friends!" />
     <meta property="twitter:image" content="https://howlcipher.github.io/Otaku-Timeline/og-image.jpg" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#121212" />
     <!-- Modern/Anime fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=M+PLUS+Rounded+1c:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- html2canvas for Export as Image -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
   </head>
   <body>
     <header role="banner" class="retro-header">
@@ -35,6 +39,7 @@
       
       <div id="headerContent" class="header-content-wrapper">
         <div class="controls" role="group" aria-label="Display Controls" style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+          <button id="exportBtn" aria-label="Export Stats as Image">🖼️ Export Stats</button>
           <button id="themeToggle" aria-label="Toggle Dark/Light Theme">Theme</button>
           <button id="colorBlindToggle" aria-label="Toggle Colorblind Mode">👁️ High Contrast</button>
         </div>

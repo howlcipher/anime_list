@@ -11,6 +11,7 @@ const addCompareBtn = document.getElementById('addCompareBtn') as HTMLButtonElem
 const removeCompareBtn = document.getElementById('removeCompareBtn') as HTMLButtonElement;
 const username2Container = document.getElementById('username2Container') as HTMLDivElement;
 const loadBtn = document.getElementById('loadBtn') as HTMLButtonElement;
+const exportBtn = document.getElementById('exportBtn') as HTMLButtonElement;
 const skeletonContainer = document.getElementById('skeleton-container') as HTMLDivElement;
 const toastContainer = document.getElementById('toast-container') as HTMLDivElement;
 const archiveContent = document.getElementById('archive-content') as HTMLDivElement;
@@ -541,6 +542,14 @@ async function handleLoad() {
     localStorage.removeItem('otakuTimeline_u2');
   }
 
+  // Update Shareable URL
+  const newUrl = new URL(window.location.href);
+  newUrl.searchParams.set('u1', u1);
+  if (u2) newUrl.searchParams.set('u2', u2);
+  else newUrl.searchParams.delete('u2');
+  newUrl.searchParams.set('type', currentType);
+  window.history.pushState({}, '', newUrl);
+
   showSkeleton();
   quickNav.classList.add('hidden');
   archiveContent.innerHTML = '';
@@ -621,11 +630,41 @@ function showToast(msg: string, type: 'error' | 'success' | 'info' = 'info') {
 
 // Initialize Theme
 if (isLight) {
-  document.documentElement.setAttribute('data-theme', 'light');
+  document.body.setAttribute('data-theme', 'light');
   themeToggle.textContent = '🌙 Dark Mode';
 } else {
   themeToggle.textContent = '☀️ Light Mode';
 }
+
+// Export as Image
+exportBtn.addEventListener('click', async () => {
+  // @ts-ignore
+  if (!window.html2canvas) {
+    return showToast('Export library is still loading...', 'info');
+  }
+  
+  if (!statsContainer.innerHTML.trim()) {
+    return showToast('No stats to export! Fetch data first.', 'error');
+  }
+  
+  showToast('Generating image...', 'info');
+  try {
+    // @ts-ignore
+    const canvas = await window.html2canvas(statsContainer, { 
+      backgroundColor: document.body.getAttribute('data-theme') === 'light' ? '#f4f4f4' : '#121212',
+      scale: 2
+    });
+    
+    const link = document.createElement('a');
+    link.download = `OtakuTimeline-${username1Input.value || 'stats'}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+    showToast('Export successful!', 'success');
+  } catch (err) {
+    console.error(err);
+    showToast('Export failed.', 'error');
+  }
+});
 
 themeToggle.addEventListener('click', () => {
   isLight = !isLight;
@@ -679,15 +718,44 @@ function handleEnter(e: KeyboardEvent) {
 username1Input.addEventListener('keydown', handleEnter);
 username2Input.addEventListener('keydown', handleEnter);
 
-// Load saved users
+// Handle Shareable URLs or Load saved users
+const params = new URLSearchParams(window.location.search);
+const pU1 = params.get('u1');
+const pU2 = params.get('u2');
+const pType = params.get('type');
+
 const savedU1 = localStorage.getItem('otakuTimeline_u1');
 const savedU2 = localStorage.getItem('otakuTimeline_u2');
-if (savedU1) username1Input.value = savedU1;
-if (savedU2) {
-  username2Input.value = savedU2;
-  isComparing = true;
-  addCompareBtn.style.display = 'none';
-  username2Container.style.display = 'flex';
+
+if (pU1) {
+  username1Input.value = pU1;
+  if (pU2) {
+    username2Input.value = pU2;
+    isComparing = true;
+    username2Container.style.display = 'flex';
+    addCompareBtn.style.display = 'none';
+  }
+  if (pType === 'MANGA') {
+    currentType = 'MANGA';
+    typeToggle.textContent = 'Mode: MANGA';
+  }
+} else {
+  if (savedU1) username1Input.value = savedU1;
+  if (savedU2) {
+    username2Input.value = savedU2;
+    isComparing = true;
+    addCompareBtn.style.display = 'none';
+    username2Container.style.display = 'flex';
+  }
+}
+
+// PWA Service Worker Registration
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch((err) => {
+      console.warn('Service Worker registration failed:', err);
+    });
+  });
 }
 
 handleLoad();

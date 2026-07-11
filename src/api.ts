@@ -63,6 +63,24 @@ export interface AnimeEntry {
   genres: string[];
 }
 
+export interface FilterOptions {
+  filterMasterpiece: boolean;
+  searchQuery: string;
+  filterGenre: string;
+  filterYear: string;
+}
+
+export function filterAnimeEntries(entries: AnimeEntry[], options: FilterOptions): AnimeEntry[] {
+  if (!entries) return [];
+  return entries.filter(e => {
+    if (options.filterMasterpiece && e.score !== 10 && e.score !== 100) return false;
+    if (options.searchQuery && !e.title.toLowerCase().includes(options.searchQuery.toLowerCase())) return false;
+    if (options.filterGenre && (!e.genres || !e.genres.includes(options.filterGenre))) return false;
+    if (options.filterYear && e.year.toString() !== options.filterYear) return false;
+    return true;
+  });
+}
+
 export interface SeasonGroup {
   WINTER: AnimeEntry[];
   SPRING: AnimeEntry[];

@@ -123,6 +123,23 @@ button:focus, input:focus, a:focus {
   letter-spacing: 2px;
 }
 
+.mobile-menu-toggle {
+  background: transparent;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.mobile-menu-toggle:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
 .controls button {
   background: transparent;
   border: 2px solid var(--text-color);
@@ -472,6 +489,24 @@ button:focus, input:focus, a:focus {
     padding: 1rem;
   }
   
+  .mobile-menu-toggle {
+    display: block !important;
+  }
+
+  .header-content-wrapper {
+    display: none;
+    flex-direction: column;
+  }
+
+  .header-content-wrapper.open {
+    display: flex;
+  }
+  
+  .controls {
+    justify-content: center !important;
+    width: 100%;
+  }
+
   .search-bar {
     flex-direction: column;
   }

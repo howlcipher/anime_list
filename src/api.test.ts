@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getSeasonFromMonth, processEntries } from './api';
+import { getSeasonFromMonth, processEntries, filterAnimeEntries } from './api';
 
 describe('API Utils', () => {
   describe('getSeasonFromMonth', () => {
@@ -110,6 +110,50 @@ describe('API Utils', () => {
       
       // Years: 2004, 2002, 1998 sorted descending
       expect(data.uniqueYears).toEqual([2004, 2002, 1998]);
+    });
+  });
+
+  describe('filterAnimeEntries', () => {
+    const mockData = [
+      { id: 1, title: 'Cowboy Bebop', score: 10, genres: ['Action', 'Sci-Fi'], year: 1998 } as any,
+      { id: 2, title: 'Naruto', score: 7, genres: ['Action', 'Adventure'], year: 2002 } as any,
+      { id: 3, title: 'Bleach', score: 8, genres: ['Action'], year: 2004 } as any,
+      { id: 4, title: 'Bebop Movie', score: 100, genres: ['Sci-Fi'], year: 2001 } as any
+    ];
+
+    it('returns all entries when no filters are applied', () => {
+      const filtered = filterAnimeEntries(mockData, { filterMasterpiece: false, searchQuery: '', filterGenre: '', filterYear: '' });
+      expect(filtered.length).toBe(4);
+    });
+
+    it('filters by masterpiece (score 10 or 100)', () => {
+      const filtered = filterAnimeEntries(mockData, { filterMasterpiece: true, searchQuery: '', filterGenre: '', filterYear: '' });
+      expect(filtered.length).toBe(2);
+      expect(filtered[0].title).toBe('Cowboy Bebop');
+      expect(filtered[1].title).toBe('Bebop Movie');
+    });
+
+    it('filters by search query', () => {
+      const filtered = filterAnimeEntries(mockData, { filterMasterpiece: false, searchQuery: 'bebop', filterGenre: '', filterYear: '' });
+      expect(filtered.length).toBe(2);
+    });
+
+    it('filters by genre', () => {
+      const filtered = filterAnimeEntries(mockData, { filterMasterpiece: false, searchQuery: '', filterGenre: 'Adventure', filterYear: '' });
+      expect(filtered.length).toBe(1);
+      expect(filtered[0].title).toBe('Naruto');
+    });
+
+    it('filters by year', () => {
+      const filtered = filterAnimeEntries(mockData, { filterMasterpiece: false, searchQuery: '', filterGenre: '', filterYear: '2004' });
+      expect(filtered.length).toBe(1);
+      expect(filtered[0].title).toBe('Bleach');
+    });
+
+    it('applies multiple filters', () => {
+      const filtered = filterAnimeEntries(mockData, { filterMasterpiece: true, searchQuery: '', filterGenre: 'Sci-Fi', filterYear: '2001' });
+      expect(filtered.length).toBe(1);
+      expect(filtered[0].title).toBe('Bebop Movie');
     });
   });
 });

@@ -1,8 +1,10 @@
 import './style.css';
-import { fetchUserAnime, type AnimeEntry } from './api';
+import { fetchUserAnime, filterAnimeEntries, type AnimeEntry } from './api';
 
 const themeToggle = document.getElementById('themeToggle') as HTMLButtonElement;
 const colorBlindToggle = document.getElementById('colorBlindToggle') as HTMLButtonElement;
+const mobileMenuToggle = document.getElementById('mobileMenuToggle') as HTMLButtonElement;
+const headerContent = document.getElementById('headerContent') as HTMLDivElement;
 const username1Input = document.getElementById('username1') as HTMLInputElement;
 const username2Input = document.getElementById('username2') as HTMLInputElement;
 const addCompareBtn = document.getElementById('addCompareBtn') as HTMLButtonElement;
@@ -117,13 +119,11 @@ function renderCard(entry: AnimeEntry, showScore: boolean = true, index: number 
 }
 
 function filterEntries(entries: AnimeEntry[]) {
-  if (!entries) return [];
-  return entries.filter(e => {
-    if (filterMasterpiece && e.score !== 10 && e.score !== 100) return false;
-    if (searchQuery && !e.title.toLowerCase().includes(searchQuery.toLowerCase())) return false;
-    if (filterGenre && (!e.genres || !e.genres.includes(filterGenre))) return false;
-    if (filterYear && e.year.toString() !== filterYear) return false;
-    return true;
+  return filterAnimeEntries(entries, {
+    filterMasterpiece,
+    searchQuery,
+    filterGenre,
+    filterYear
   });
 }
 
@@ -289,10 +289,34 @@ function renderComparison(u1: string, u2: string, u1Data: any, u2Data: any) {
     if (affinityPercent > 100) affinityPercent = 100;
   }
 
-  const fMatches = matches.filter(m => !filterMasterpiece || (m.e1.score === 10 || m.e2.score === 10 || m.e1.score === 100 || m.e2.score === 100));
+  const fMatches = matches.filter(m => {
+    const passesGeneral = (
+      (!searchQuery || m.e1.title.toLowerCase().includes(searchQuery.toLowerCase())) &&
+      (!filterGenre || (m.e1.genres && m.e1.genres.includes(filterGenre))) &&
+      (!filterYear || m.e1.year.toString() === filterYear)
+    );
+    if (!passesGeneral) return false;
+    if (filterMasterpiece) {
+      return m.e1.score === 10 || m.e2.score === 10 || m.e1.score === 100 || m.e2.score === 100;
+    }
+    return true;
+  });
+  
+  const fPlan = planMatches.filter(m => {
+    const passesGeneral = (
+      (!searchQuery || m.e1.title.toLowerCase().includes(searchQuery.toLowerCase())) &&
+      (!filterGenre || (m.e1.genres && m.e1.genres.includes(filterGenre))) &&
+      (!filterYear || m.e1.year.toString() === filterYear)
+    );
+    if (!passesGeneral) return false;
+    if (filterMasterpiece) {
+      return false; // Planning items usually don't have scores, so they can't be masterpieces
+    }
+    return true;
+  });
+
   const fOnlyU1 = filterEntries(onlyU1);
   const fOnlyU2 = filterEntries(onlyU2);
-  const fPlan = planMatches;
 
   let html = `
     <div style="text-align: center; margin-bottom: 2rem;">
@@ -539,6 +563,10 @@ colorBlindToggle.addEventListener('click', () => {
     document.documentElement.removeAttribute('data-colorblind');
     colorBlindToggle.textContent = '👁️ High Contrast';
   }
+});
+
+mobileMenuToggle.addEventListener('click', () => {
+  headerContent.classList.toggle('open');
 });
 
 addCompareBtn.addEventListener('click', () => {

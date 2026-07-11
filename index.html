@@ -30,14 +30,17 @@
     <header role="banner" class="retro-header">
       <div class="header-container">
         <h1 class="logo">Otaku Timeline</h1>
-        <div class="controls" role="group" aria-label="Display Controls">
-          <button id="themeToggle" aria-label="Toggle Dark/Light Theme">Theme</button>
-          <button id="colorBlindToggle" aria-label="Toggle Colorblind Mode">A11y Colors</button>
-        </div>
+        <button id="mobileMenuToggle" class="mobile-menu-toggle" aria-label="Toggle Menu" style="display: none;">☰</button>
       </div>
       
-      <div class="search-bar" role="search">
-        <div class="input-group">
+      <div id="headerContent" class="header-content-wrapper">
+        <div class="controls" role="group" aria-label="Display Controls" style="display: flex; justify-content: flex-end; margin-bottom: 1rem;">
+          <button id="themeToggle" aria-label="Toggle Dark/Light Theme">Theme</button>
+          <button id="colorBlindToggle" aria-label="Toggle Colorblind Mode">👁️ High Contrast</button>
+        </div>
+        
+        <div class="search-bar" role="search">
+          <div class="input-group">
           <label for="username1" class="sr-only">Username 1</label>
           <input type="text" id="username1" placeholder="Username 1 (e.g. howlcipher)" aria-label="Primary AniList Username" />
         </div>
@@ -77,6 +80,7 @@
       <div class="links">
         <a href="https://github.com/howlcipher/Otaku-Timeline" target="_blank" rel="noopener noreferrer" aria-label="View source code on GitHub">Source Code</a> | 
         <a href="https://anilist.co" target="_blank" rel="noopener noreferrer" aria-label="Visit AniList website">Powered by AniList.co</a>
+      </div>
       </div>
     </header>
 
